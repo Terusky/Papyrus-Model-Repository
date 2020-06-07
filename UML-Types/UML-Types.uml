@@ -6,7 +6,11 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_mC_D8KhiEeqKluuGclvl4Q">
     <importedPackage xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Package" xmi:id="_wLwDsKhiEeqKluuGclvl4Q" name="Property"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_wLwDsKhiEeqKluuGclvl4Q" name="Property">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_SbVZkKj_Eeq6LsFzav_Dyw" annotatedElement="_wLwDsKhiEeqKluuGclvl4Q">
+      <body>プロパティはStructuralFeatureです。 所有者によって分類子（関連付け以外）に関連付けられたプロパティは、属性を表し、関連付けの終わりを表す場合もあります。 これは、分類子のインスタンスを属性のタイプの値または値のセットに関連付けます。 memberEndによって関連付けに関連付けられたプロパティは、関連付けの終わりを表します。 プロパティのタイプは、関連付けの終わりのタイプです。 プロパティは、配置関係のDeploymentTargetになることができます。 これにより、内部パーツとして機能するプロパティを持つ階層ノードへの展開をモデル化できます。 Propertyは、ParameterableElementを特殊化して、Propertyを正式なテンプレートパラメーターとして公開し、テンプレートのバインディングで実際のパラメーターとして提供できることを指定します。</body>
+    </ownedComment>
+  </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_Q00LIKhkEeqKluuGclvl4Q" name="Operation"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_AWDdMKhlEeqKluuGclvl4Q" name="Comment"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_YY25cKhmEeqKluuGclvl4Q" name="Package"/>
@@ -18,4 +22,5 @@
   <packagedElement xmi:type="uml:Package" xmi:id="_4SfLYKiQEeqOJOlVV-VnEA" name="InstanceSpecification"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_vCvB0KiREeqOJOlVV-VnEA" name="Association"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_b9L30KiSEeqOJOlVV-VnEA" name="Generalization"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_v-OzkKj7Eeq6LsFzav_Dyw" name="PrimitiveType"/>
 </uml:Model>
