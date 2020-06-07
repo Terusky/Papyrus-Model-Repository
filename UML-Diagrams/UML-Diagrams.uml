@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_imFlsG7NEeiHVoyoTWCY7g" name="UML-Diagrams">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_i3OZAG7NEeiHVoyoTWCY7g">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_hTTAwG7QEeiHVoyoTWCY7g" name="Activity Diagram">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_mvXA0G7QEeiHVoyoTWCY7g" name="Activity1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_jrEJYG7QEeiHVoyoTWCY7g" name="Class Diagram"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_saD50G7QEeiHVoyoTWCY7g" name="Communication Diagram">
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_uu0xwG7QEeiHVoyoTWCY7g" name="Interaction1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_yXhWwG7QEeiHVoyoTWCY7g" name="Composite Structure Diagram"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_2KHeoG7QEeiHVoyoTWCY7g" name="Deployment Diagram"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_6R2JAG7QEeiHVoyoTWCY7g" name="Interaction Overview Diagram">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_7VkP0G7QEeiHVoyoTWCY7g" name="Activity1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="__hdogG7QEeiHVoyoTWCY7g" name="Package Diagram"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_DrZSUG7REeiHVoyoTWCY7g" name="Sequence Diagram">
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_Elwo0G7REeiHVoyoTWCY7g" name="Interaction1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_OSpk4G7REeiHVoyoTWCY7g" name="State Machine Diagram">
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_PtTlAG7REeiHVoyoTWCY7g" name="StateMachine1">
+      <region xmi:type="uml:Region" xmi:id="_P7a5gG7REeiHVoyoTWCY7g" name="Region1"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_SeDOUG7REeiHVoyoTWCY7g" name="Timing Diagram"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_WO2mcG7REeiHVoyoTWCY7g" name="Use Case Diagram"/>
+</uml:Model>
