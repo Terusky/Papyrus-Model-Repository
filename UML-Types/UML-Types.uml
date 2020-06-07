@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_bRl98KhiEeqKluuGclvl4Q" name="UML-Types">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_baI18KhiEeqKluuGclvl4Q">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_mC_D8KhiEeqKluuGclvl4Q">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_wLwDsKhiEeqKluuGclvl4Q" name="Property"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Q00LIKhkEeqKluuGclvl4Q" name="Operation"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_AWDdMKhlEeqKluuGclvl4Q" name="Comment"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_YY25cKhmEeqKluuGclvl4Q" name="Package"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_dWipgKhoEeqKluuGclvl4Q" name="Class"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_PCVHwKiOEeqOJOlVV-VnEA" name="DataType"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_1n6tcKiOEeqOJOlVV-VnEA" name="Enumeration"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_VhH6sKiPEeqOJOlVV-VnEA" name="EnumerationLiteral"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="__8FPcKiPEeqOJOlVV-VnEA" name="Interface"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_4SfLYKiQEeqOJOlVV-VnEA" name="InstanceSpecification"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_vCvB0KiREeqOJOlVV-VnEA" name="Association"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_b9L30KiSEeqOJOlVV-VnEA" name="Generalization"/>
+</uml:Model>
