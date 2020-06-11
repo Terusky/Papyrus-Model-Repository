@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
   <uml:Model xmi:id="_v7l5QKr-EeqM--c6r6JPZg" name="UMLorSysML">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_wLkO8Kr-EeqM--c6r6JPZg">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -9,9 +9,18 @@
         <body>継続してサービスが提供出来る仕組みか</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_PbQvsKsAEeqM--c6r6JPZg" name="要求"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_ADCzEKsBEeqM--c6r6JPZg" name="メニュー構成管理"/>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_MizfYKsBEeqM--c6r6JPZg" client="_ADCzEKsBEeqM--c6r6JPZg" supplier="_PbQvsKsAEeqM--c6r6JPZg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PbQvsKsAEeqM--c6r6JPZg" name="メニューへのアクセス容易性に関する要求"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ADCzEKsBEeqM--c6r6JPZg" name="頻度ベースメニュー並び替え機能">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_eOe14KvQEeqTFeeBE70LQw" name="アクセス頻度計算"/>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_oa3xYKvQEeqTFeeBE70LQw" name="頻度ベースメニューソート"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_MNKlgKvQEeqTFeeBE70LQw" client="_ADCzEKsBEeqM--c6r6JPZg" supplier="_PbQvsKsAEeqM--c6r6JPZg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_7XS_IKvQEeqTFeeBE70LQw" name="Requirement15"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-3OCoKvQEeqTFeeBE70LQw" name="Block16"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_uy3YwKvREeqTFeeBE70LQw" name="Satisfy17" client="_-3OCoKvQEeqTFeeBE70LQw" supplier="_7XS_IKvQEeqTFeeBE70LQw"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2e2NAKvREeqTFeeBE70LQw" name="Requirement18"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_4-5H4KvREeqTFeeBE70LQw" name="Class19"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_7u1f8KvREeqTFeeBE70LQw" name="Satisfy20" client="_4-5H4KvREeqTFeeBE70LQw" supplier="_2e2NAKvREeqTFeeBE70LQw"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-KMtAKr-EeqM--c6r6JPZg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-KPJQKr-EeqM--c6r6JPZg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
@@ -68,6 +77,11 @@
     </profileApplication>
   </uml:Model>
   <ModelElements:Stakeholder xmi:id="_ZwDOsKr_EeqM--c6r6JPZg" base_Classifier="_OxUQQKr_EeqM--c6r6JPZg" concernList="_B5pk0KsAEeqM--c6r6JPZg"/>
-  <Requirements:Requirement xmi:id="_WWWSgKsAEeqM--c6r6JPZg" base_NamedElement="_PbQvsKsAEeqM--c6r6JPZg" id="メニュー構成に対する要求" text="使用頻度に応じてメニューアイテムの表示位置を操作しやすい位置に変更する" base_Class="_PbQvsKsAEeqM--c6r6JPZg"/>
-  <Requirements:Satisfy xmi:id="_Sqq1gKsBEeqM--c6r6JPZg" base_DirectedRelationship="_MizfYKsBEeqM--c6r6JPZg" base_Abstraction="_MizfYKsBEeqM--c6r6JPZg"/>
+  <Requirements:Requirement xmi:id="_088nUKvPEeqTFeeBE70LQw" base_NamedElement="_PbQvsKsAEeqM--c6r6JPZg" id="MENU1" text="よく使うメニューは容易にアクセス可能となるような仕組みとしたい" base_Class="_PbQvsKsAEeqM--c6r6JPZg"/>
+  <Requirements:Satisfy xmi:id="_N5m5MKvQEeqTFeeBE70LQw" base_DirectedRelationship="_MNKlgKvQEeqTFeeBE70LQw" base_Abstraction="_MNKlgKvQEeqTFeeBE70LQw"/>
+  <Requirements:Requirement xmi:id="_7Xa68KvQEeqTFeeBE70LQw" base_NamedElement="_7XS_IKvQEeqTFeeBE70LQw" base_Class="_7XS_IKvQEeqTFeeBE70LQw"/>
+  <Blocks:Block xmi:id="_-3UJQKvQEeqTFeeBE70LQw" base_Class="_-3OCoKvQEeqTFeeBE70LQw"/>
+  <Requirements:Satisfy xmi:id="_uy84UKvREeqTFeeBE70LQw" base_DirectedRelationship="_uy3YwKvREeqTFeeBE70LQw" base_Abstraction="_uy3YwKvREeqTFeeBE70LQw"/>
+  <Requirements:Requirement xmi:id="_2e6ecKvREeqTFeeBE70LQw" base_NamedElement="_2e2NAKvREeqTFeeBE70LQw" base_Class="_2e2NAKvREeqTFeeBE70LQw"/>
+  <Requirements:Satisfy xmi:id="_7u5KUKvREeqTFeeBE70LQw" base_DirectedRelationship="_7u1f8KvREeqTFeeBE70LQw" base_Abstraction="_7u1f8KvREeqTFeeBE70LQw"/>
 </xmi:XMI>
