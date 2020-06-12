@@ -23,4 +23,8 @@
   <packagedElement xmi:type="uml:Package" xmi:id="_vCvB0KiREeqOJOlVV-VnEA" name="Association"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_b9L30KiSEeqOJOlVV-VnEA" name="Generalization"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_v-OzkKj7Eeq6LsFzav_Dyw" name="PrimitiveType"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_EhSfEKy5EeqT47TZHamjEA" name="Abstraction"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_YfbMAKy6EeqT47TZHamjEA" name="Dependency"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_RO8ykKy7EeqT47TZHamjEA" name="Deployment"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_QbW9AKy8EeqT47TZHamjEA" name="Parameter"/>
 </uml:Model>
