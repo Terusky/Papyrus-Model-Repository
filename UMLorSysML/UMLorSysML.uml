@@ -4,23 +4,27 @@
     <packageImport xmi:type="uml:PackageImport" xmi:id="_wLkO8Kr-EeqM--c6r6JPZg">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_OxUQQKr_EeqM--c6r6JPZg" name="StakeholderA">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_B5pk0KsAEeqM--c6r6JPZg">
-        <body>継続してサービスが提供出来る仕組みか</body>
-      </ownedComment>
+    <packagedElement xmi:type="uml:Package" xmi:id="_jLYXoKwmEeqTFeeBE70LQw" name="Requirements">
+      <packagedElement xmi:type="uml:Class" xmi:id="_4-5H4KvREeqTFeeBE70LQw" name="Class19"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_-3OCoKvQEeqTFeeBE70LQw" name="Block16"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7XS_IKvQEeqTFeeBE70LQw" name="Requirement15"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_2e2NAKvREeqTFeeBE70LQw" name="Requirement18"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_PbQvsKsAEeqM--c6r6JPZg" name="メニューへのアクセス容易性に関する要求"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_uy3YwKvREeqTFeeBE70LQw" name="Satisfy17" client="_-3OCoKvQEeqTFeeBE70LQw" supplier="_7XS_IKvQEeqTFeeBE70LQw"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_7u1f8KvREeqTFeeBE70LQw" name="Satisfy20" client="_4-5H4KvREeqTFeeBE70LQw" supplier="_2e2NAKvREeqTFeeBE70LQw"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_MNKlgKvQEeqTFeeBE70LQw" client="_ADCzEKsBEeqM--c6r6JPZg" supplier="_PbQvsKsAEeqM--c6r6JPZg"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ADCzEKsBEeqM--c6r6JPZg" name="頻度ベースメニュー並び替え機能">
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_eOe14KvQEeqTFeeBE70LQw" name="アクセス頻度計算"/>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_oa3xYKvQEeqTFeeBE70LQw" name="頻度ベースメニューソート"/>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_PbQvsKsAEeqM--c6r6JPZg" name="メニューへのアクセス容易性に関する要求"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_ADCzEKsBEeqM--c6r6JPZg" name="頻度ベースメニュー並び替え機能">
-      <ownedBehavior xmi:type="uml:Activity" xmi:id="_eOe14KvQEeqTFeeBE70LQw" name="アクセス頻度計算"/>
-      <ownedBehavior xmi:type="uml:Activity" xmi:id="_oa3xYKvQEeqTFeeBE70LQw" name="頻度ベースメニューソート"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_o-p90KwmEeqTFeeBE70LQw" name="Stakeholder">
+      <packagedElement xmi:type="uml:Actor" xmi:id="_OxUQQKr_EeqM--c6r6JPZg" name="StakeholderA">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_B5pk0KsAEeqM--c6r6JPZg">
+          <body>継続してサービスが提供出来る仕組みか</body>
+        </ownedComment>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_MNKlgKvQEeqTFeeBE70LQw" client="_ADCzEKsBEeqM--c6r6JPZg" supplier="_PbQvsKsAEeqM--c6r6JPZg"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_7XS_IKvQEeqTFeeBE70LQw" name="Requirement15"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_-3OCoKvQEeqTFeeBE70LQw" name="Block16"/>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_uy3YwKvREeqTFeeBE70LQw" name="Satisfy17" client="_-3OCoKvQEeqTFeeBE70LQw" supplier="_7XS_IKvQEeqTFeeBE70LQw"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_2e2NAKvREeqTFeeBE70LQw" name="Requirement18"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_4-5H4KvREeqTFeeBE70LQw" name="Class19"/>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_7u1f8KvREeqTFeeBE70LQw" name="Satisfy20" client="_4-5H4KvREeqTFeeBE70LQw" supplier="_2e2NAKvREeqTFeeBE70LQw"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-KMtAKr-EeqM--c6r6JPZg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-KPJQKr-EeqM--c6r6JPZg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>

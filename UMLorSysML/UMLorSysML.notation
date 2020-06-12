@@ -50,7 +50,7 @@
     <styles xmi:type="notation:StringValueStyle" xmi:id="_NmQyYar_EeqM--c6r6JPZg" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_NmQyYqr_EeqM--c6r6JPZg"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_NmQyY6r_EeqM--c6r6JPZg" diagramKindId="org.eclipse.papyrus.uml.diagram.useCase">
-      <owner xmi:type="uml:Model" href="UMLorSysML.uml#_v7l5QKr-EeqM--c6r6JPZg"/>
+      <owner xmi:type="uml:Package" href="UMLorSysML.uml#_o-p90KwmEeqTFeeBE70LQw"/>
     </styles>
     <element xmi:type="uml:Model" href="UMLorSysML.uml#_v7l5QKr-EeqM--c6r6JPZg"/>
     <edges xmi:type="notation:Connector" xmi:id="_Zwesgar_EeqM--c6r6JPZg" type="StereotypeCommentLink" source="_OxXTkKr_EeqM--c6r6JPZg" target="_ZweFcKr_EeqM--c6r6JPZg">
@@ -340,7 +340,7 @@
     <styles xmi:type="notation:StringValueStyle" xmi:id="_Oaw8AasAEeqM--c6r6JPZg" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_Oaw8AqsAEeqM--c6r6JPZg"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_Oaw8A6sAEeqM--c6r6JPZg" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
-      <owner xmi:type="uml:Model" href="UMLorSysML.uml#_v7l5QKr-EeqM--c6r6JPZg"/>
+      <owner xmi:type="uml:Package" href="UMLorSysML.uml#_jLYXoKwmEeqTFeeBE70LQw"/>
     </styles>
     <element xmi:type="uml:Model" href="UMLorSysML.uml#_v7l5QKr-EeqM--c6r6JPZg"/>
     <edges xmi:type="notation:Connector" xmi:id="_09Me8KvPEeqTFeeBE70LQw" type="StereotypeCommentLink" source="_PbTL8KsAEeqM--c6r6JPZg" target="_09L34qvPEeqTFeeBE70LQw">
