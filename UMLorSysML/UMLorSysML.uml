@@ -5,18 +5,9 @@
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_jLYXoKwmEeqTFeeBE70LQw" name="Requirements">
-      <packagedElement xmi:type="uml:Class" xmi:id="_4-5H4KvREeqTFeeBE70LQw" name="Class19"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_-3OCoKvQEeqTFeeBE70LQw" name="Block16"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_7XS_IKvQEeqTFeeBE70LQw" name="Requirement15"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_2e2NAKvREeqTFeeBE70LQw" name="Requirement18"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_PbQvsKsAEeqM--c6r6JPZg" name="メニューへのアクセス容易性に関する要求"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_uy3YwKvREeqTFeeBE70LQw" name="Satisfy17" client="_-3OCoKvQEeqTFeeBE70LQw" supplier="_7XS_IKvQEeqTFeeBE70LQw"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_7u1f8KvREeqTFeeBE70LQw" name="Satisfy20" client="_4-5H4KvREeqTFeeBE70LQw" supplier="_2e2NAKvREeqTFeeBE70LQw"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_MNKlgKvQEeqTFeeBE70LQw" client="_ADCzEKsBEeqM--c6r6JPZg" supplier="_PbQvsKsAEeqM--c6r6JPZg"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_ADCzEKsBEeqM--c6r6JPZg" name="頻度ベースメニュー並び替え機能">
-        <ownedBehavior xmi:type="uml:Activity" xmi:id="_eOe14KvQEeqTFeeBE70LQw" name="アクセス頻度計算"/>
-        <ownedBehavior xmi:type="uml:Activity" xmi:id="_oa3xYKvQEeqTFeeBE70LQw" name="頻度ベースメニューソート"/>
-      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_t1YZgK1VEeqNBsOYcV9nuQ" name="Requirement1"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_3JWfQK1VEeqNBsOYcV9nuQ" name="Block2"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_Dd6ywK1XEeqNBsOYcV9nuQ" name="Satisfy3" client="_3JWfQK1VEeqNBsOYcV9nuQ" supplier="_t1YZgK1VEeqNBsOYcV9nuQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_o-p90KwmEeqTFeeBE70LQw" name="Stakeholder">
       <packagedElement xmi:type="uml:Actor" xmi:id="_OxUQQKr_EeqM--c6r6JPZg" name="StakeholderA">
@@ -81,11 +72,7 @@
     </profileApplication>
   </uml:Model>
   <ModelElements:Stakeholder xmi:id="_ZwDOsKr_EeqM--c6r6JPZg" base_Classifier="_OxUQQKr_EeqM--c6r6JPZg" concernList="_B5pk0KsAEeqM--c6r6JPZg"/>
-  <Requirements:Requirement xmi:id="_088nUKvPEeqTFeeBE70LQw" base_NamedElement="_PbQvsKsAEeqM--c6r6JPZg" id="MENU1" text="よく使うメニューは容易にアクセス可能となるような仕組みとしたい" base_Class="_PbQvsKsAEeqM--c6r6JPZg"/>
-  <Requirements:Satisfy xmi:id="_N5m5MKvQEeqTFeeBE70LQw" base_DirectedRelationship="_MNKlgKvQEeqTFeeBE70LQw" base_Abstraction="_MNKlgKvQEeqTFeeBE70LQw"/>
-  <Requirements:Requirement xmi:id="_7Xa68KvQEeqTFeeBE70LQw" base_NamedElement="_7XS_IKvQEeqTFeeBE70LQw" base_Class="_7XS_IKvQEeqTFeeBE70LQw"/>
-  <Blocks:Block xmi:id="_-3UJQKvQEeqTFeeBE70LQw" base_Class="_-3OCoKvQEeqTFeeBE70LQw"/>
-  <Requirements:Satisfy xmi:id="_uy84UKvREeqTFeeBE70LQw" base_DirectedRelationship="_uy3YwKvREeqTFeeBE70LQw" base_Abstraction="_uy3YwKvREeqTFeeBE70LQw"/>
-  <Requirements:Requirement xmi:id="_2e6ecKvREeqTFeeBE70LQw" base_NamedElement="_2e2NAKvREeqTFeeBE70LQw" base_Class="_2e2NAKvREeqTFeeBE70LQw"/>
-  <Requirements:Satisfy xmi:id="_7u5KUKvREeqTFeeBE70LQw" base_DirectedRelationship="_7u1f8KvREeqTFeeBE70LQw" base_Abstraction="_7u1f8KvREeqTFeeBE70LQw"/>
+  <Requirements:Requirement xmi:id="_t1ypMK1VEeqNBsOYcV9nuQ" base_NamedElement="_t1YZgK1VEeqNBsOYcV9nuQ" base_Class="_t1YZgK1VEeqNBsOYcV9nuQ"/>
+  <Blocks:Block xmi:id="_3JebEK1VEeqNBsOYcV9nuQ" base_Class="_3JWfQK1VEeqNBsOYcV9nuQ"/>
+  <Requirements:Satisfy xmi:id="_DeCHgK1XEeqNBsOYcV9nuQ" base_DirectedRelationship="_Dd6ywK1XEeqNBsOYcV9nuQ" base_Abstraction="_Dd6ywK1XEeqNBsOYcV9nuQ"/>
 </xmi:XMI>
