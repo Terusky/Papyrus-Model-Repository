@@ -23,14 +23,45 @@ A package is used to group elements, and provides a namespace for the grouped el
 </html>
 
 <h5>プロパティ</h5>
-URI						Body	Provides an identifier for the package that can be used for many purposes. A URI is the universally unique identification of the package following the IETF URI specification, RFC 2396 http://www.ietf.org/rfc/rfc2396.txt and it must comply with those syntax rules.
-nestedPackage			Body	References the packaged elements that are Packages.
-nestingPackage		Body	References the Package that owns this Package.
-ownedStereotype		Body	References the Stereotypes that are owned by the Package.
-ownedType				Body	References the packaged elements that are Types.
-packageMerge			Body	References the PackageMerges that are owned by this Package.
-packagedElement		Body	Specifies the packageable elements that are owned by this Package.
-profileApplication	Body	References the ProfileApplications that indicate which profiles have been applied to the Package.
+<<table>
+  <tr>
+    <th>プロパティ</th>
+    <th>説明</th>
+  </tr>
+  <tr>
+    <td>URI</td>
+    <td>Provides an identifier for the package that can be used for many purposes. A URI is the universally unique identification of the package following the IETF URI specification, RFC 2396 http://www.ietf.org/rfc/rfc2396.txt and it must comply with those syntax rules.</td>
+  </tr>
+  <tr>
+    <td>nestedPackage</td>
+    <td>References the packaged elements that are Packages.</td>
+  </tr>
+  <tr>
+    <td>nestingPackage</td>
+    <td>References the Package that owns this Package.</td>
+  </tr>
+  <tr>
+    <td>ownedStereotype</td>
+    <td>References the Stereotypes that are owned by the Package.</td>
+  </tr>
+  <tr>
+    <td>ownedType</td>
+    <td>References the packaged elements that are Types.</td>
+  </tr>
+  <tr>
+    <td>packageMerge</td>
+    <td>References the PackageMerges that are owned by this Package.</td>
+  </tr>
+  <tr>
+    <td>packagedElement</td>
+    <td>Specifies the packageable elements that are owned by this Package.</td>
+  </tr>
+  <tr>
+    <td>profileApplication</td>
+    <td>References the ProfileApplications that indicate which profiles have been applied to the Package.</td>
+  </tr>
+</table>
+
 
 <h5>親クラス</h5>
 <ul>
@@ -40,4 +71,8 @@ profileApplication	Body	References the ProfileApplications that indicate which p
 </ul>
 
 <h5>制約</h5>
-
+<div align="center">
+	<img width="640" alt="Package Constraints Definition" src="https://github.com/Terusky/Papyrus-Model-Repository/blob/master/UML-Types/Model/Package_Package_Package_Constraints.PNG?raw=true"/>
+</div>
+</body>
+</html>

@@ -4130,7 +4130,7 @@
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_u1txkK94EeqapIlXK3jyhA" type="Comment_BodyLabel"/>
       <element xmi:type="uml:Comment" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Package-elements_public_or_private-_ownedComment.0"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u1tKga94EeqapIlXK3jyhA" x="480" y="100" height="81"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u1tKga94EeqapIlXK3jyhA" x="480" y="100" width="281" height="81"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_oXhmIa94EeqapIlXK3jyhA" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_oXhmIq94EeqapIlXK3jyhA"/>
