@@ -1426,16 +1426,6 @@
       <element xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Package"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ddB98ahmEeqKluuGclvl4Q" x="160" y="40" width="321" height="241"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_deKmYKhmEeqKluuGclvl4Q" type="Comment_Shape" fontName="Segoe UI" fontHeight="10">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gLehMKhmEeqKluuGclvl4Q" source="PapyrusCSSForceValue">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gLehMahmEeqKluuGclvl4Q" key="bold" value="true"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gLfIQKhmEeqKluuGclvl4Q" key="italic" value="true"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gLfIQahmEeqKluuGclvl4Q" key="fontColor" value="true"/>
-      </eAnnotations>
-      <children xmi:type="notation:DecorationNode" xmi:id="_deLNcKhmEeqKluuGclvl4Q" type="Comment_BodyLabel"/>
-      <element xmi:type="uml:Comment" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Package-_ownedComment.0"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_deKmYahmEeqKluuGclvl4Q" y="-160" width="581"/>
-    </children>
     <children xmi:type="notation:Shape" xmi:id="_deldIKhmEeqKluuGclvl4Q" type="Class_Shape" fontName="Segoe UI" fontHeight="11">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jMCvMKhmEeqKluuGclvl4Q" source="PapyrusCSSForceValue">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jMCvMahmEeqKluuGclvl4Q" key="bold" value="true"/>
