@@ -19,46 +19,69 @@ A package is used to group elements, and provides a namespace for the grouped el
 <div align="center">
 	<img width="640" alt="Package MetaClass Definition" src="https://github.com/Terusky/Papyrus-Model-Repository/blob/master/UML-Types/Model/Package_Package_Package.PNG?raw=true"/>
 </div>
-</body>
-</html>
+
 
 <h5>プロパティ</h5>
-<<table>
+<table border="1">
   <tr>
     <th>プロパティ</th>
     <th>説明</th>
   </tr>
   <tr>
     <td>URI</td>
-    <td>Provides an identifier for the package that can be used for many purposes. A URI is the universally unique identification of the package following the IETF URI specification, RFC 2396 http://www.ietf.org/rfc/rfc2396.txt and it must comply with those syntax rules.</td>
+    <td>
+    <!-- Provides an identifier for the package that can be used for many purposes. A URI is the universally unique identification of the package following the IETF URI specification, RFC 2396 http://www.ietf.org/rfc/rfc2396.txt and it must comply with those syntax rules. -->
+    多くの目的に使用できるパッケージの識別子を提供します。 URIは、IETF URI仕様（RFC 2396 http://www.ietf.org/rfc/rfc2396.txt）に準拠した、パッケージの普遍的に一意のIDであり、これらの構文規則に準拠している必要があります。
+    </td>
   </tr>
   <tr>
     <td>nestedPackage</td>
-    <td>References the packaged elements that are Packages.</td>
+    <td>
+    <!-- References the packaged elements that are Packages. -->
+    Packagesであるパッケージ化された要素を参照します。
+    </td>
   </tr>
   <tr>
     <td>nestingPackage</td>
-    <td>References the Package that owns this Package.</td>
+    <td>
+    <!-- References the Package that owns this Package. -->
+    このパッケージを所有するパッケージを参照します。
+    </td>
   </tr>
   <tr>
     <td>ownedStereotype</td>
-    <td>References the Stereotypes that are owned by the Package.</td>
+    <td>
+    <!-- References the Stereotypes that are owned by the Package. -->
+    パッケージが所有するステレオタイプを参照します。
+    </td>
   </tr>
   <tr>
     <td>ownedType</td>
-    <td>References the packaged elements that are Types.</td>
+    <td>
+    <!-- References the packaged elements that are Types. -->
+    タイプであるパッケージ化された要素を参照します。
+    </td>
   </tr>
   <tr>
     <td>packageMerge</td>
-    <td>References the PackageMerges that are owned by this Package.</td>
+    <td>
+    <!-- References the PackageMerges that are owned by this Package. -->
+    このパッケージが所有するPackageMergesを参照します。
+    </td>
   </tr>
   <tr>
     <td>packagedElement</td>
-    <td>Specifies the packageable elements that are owned by this Package.</td>
+    <td>
+    <!-- Specifies the packageable elements that are owned by this Package. -->
+    このパッケージが所有するパッケージ化可能な要素を指定します。
+    </td>
   </tr>
   <tr>
     <td>profileApplication</td>
-    <td>References the ProfileApplications that indicate which profiles have been applied to the Package.</td>
+    <td>
+    <!-- References the ProfileApplications that indicate which profiles have been applied to the Package. -->
+    パッケージに適用されているプロファイルを示すProfileApplicationsを参照します。
+    </td>
   </tr>
 </table>
 
@@ -74,5 +97,6 @@ A package is used to group elements, and provides a namespace for the grouped el
 <div align="center">
 	<img width="640" alt="Package Constraints Definition" src="https://github.com/Terusky/Papyrus-Model-Repository/blob/master/UML-Types/Model/Package_Package_Package_Constraints.PNG?raw=true"/>
 </div>
+
 </body>
 </html>
