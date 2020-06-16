@@ -5,9 +5,39 @@
 <title>Package</title>
 </head>
 <body>
+<h5>説明</h5>
+<!-- A package can have one or more profile applications to indicate which profiles have been applied.
+Because a profile is a package, it is possible to apply a profile not only to packages, but also to profiles.
+Package specializes TemplateableElement and PackageableElement specializes ParameterableElement to specify that a package can be used as a template and a PackageableElement as a template parameter.
+A package is used to group elements, and provides a namespace for the grouped elements. -->
+<p>パッケージには、適用されているプロファイルを示す1つ以上のプロファイルアプリケーションを含めることができます。</p>
+<p>プロファイルはパッケージであるため、パッケージだけでなくプロファイルにも適用できます。</p>
+<p>PackageはTemplateableElementを特殊化し、PackageableElementはParameterableElementを特殊化して、パッケージをテンプレートとして、PackageableElementをテンプレートパラメーターとして使用できることを指定します。</p>
+<p>パッケージは、要素をグループ化するために使用され、グループ化された要素の名前空間を提供します。</p>
+
 <h5>MetaClass 定義</h5>
 <div align="center">
-	<img alt="Package MetaClass Definition" src=""/>
+	<img width="640" alt="Package MetaClass Definition" src="https://github.com/Terusky/Papyrus-Model-Repository/blob/master/UML-Types/Model/Package_Package_Package.PNG?raw=true"/>
 </div>
 </body>
 </html>
+
+<h5>プロパティ</h5>
+URI						Body	Provides an identifier for the package that can be used for many purposes. A URI is the universally unique identification of the package following the IETF URI specification, RFC 2396 http://www.ietf.org/rfc/rfc2396.txt and it must comply with those syntax rules.
+nestedPackage			Body	References the packaged elements that are Packages.
+nestingPackage		Body	References the Package that owns this Package.
+ownedStereotype		Body	References the Stereotypes that are owned by the Package.
+ownedType				Body	References the packaged elements that are Types.
+packageMerge			Body	References the PackageMerges that are owned by this Package.
+packagedElement		Body	Specifies the packageable elements that are owned by this Package.
+profileApplication	Body	References the ProfileApplications that indicate which profiles have been applied to the Package.
+
+<h5>親クラス</h5>
+<ul>
+<li>TemplateableElement</li>
+<li>PackageableElement</li>
+<li>Namespace</li>
+</ul>
+
+<h5>制約</h5>
+
