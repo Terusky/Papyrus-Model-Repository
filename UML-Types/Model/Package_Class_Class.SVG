@@ -109,10 +109,10 @@
                 <path d="M-1 -1 L401 -1 L401 362 L-1 362 L-1 -1 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath32">
-                <path d="M85 277 L103 277 L103 292 L85 292 L85 277 Z"/>
+                <path d="M76 276 L94 276 L94 292 L76 292 L76 276 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath33">
-                <path d="M317 276 L333 276 L333 292 L317 292 L317 276 Z"/>
+                <path d="M308 276 L325 276 L325 292 L308 292 L308 276 Z"/>
             </clipPath>
         </defs>
         <g fill="url(#linearGradient1)" font-family="'Yu Gothic UI'" stroke-linejoin="round" stroke="url(#linearGradient1)" stroke-width="0" stroke-miterlimit="0">
@@ -150,14 +150,14 @@
             <text x="270" font-size="14" y="316" clip-path="url(#clipPath28)" font-family="'Segoe UI'" stroke="none" xml:space="preserve">«Metaclass»</text>
             <text x="237" font-size="14" y="337" clip-path="url(#clipPath29)" font-family="'Segoe UI'" stroke="none" xml:space="preserve">EncapsulatedClassifier</text>
             <rect x="230" y="290" clip-path="url(#clipPath30)" fill="none" width="159" rx="0" ry="0" height="60"/>
-            <line clip-path="url(#clipPath31)" fill="none" text-rendering="optimizeLegibility" x1="110" x2="90" y1="231" y2="290"/>
+            <line clip-path="url(#clipPath31)" fill="none" text-rendering="optimizeLegibility" x1="109" x2="80" y1="231" y2="290"/>
         </g>
         <g stroke-linecap="butt" fill="white" text-rendering="optimizeLegibility" font-family="'Segoe UI'" stroke="white" stroke-width="1.1">
-            <polygon clip-path="url(#clipPath32)" points=" 90 290 86 278 101 283" stroke="none"/>
-            <polygon fill="none" clip-path="url(#clipPath32)" points=" 90 290 86 278 101 283" stroke="black"/>
-            <line clip-path="url(#clipPath31)" fill="none" x1="290" x2="330" y1="231" y2="290" stroke="black"/>
-            <polygon clip-path="url(#clipPath33)" points=" 330 290 318 286 331 277" stroke="none"/>
-            <polygon fill="none" clip-path="url(#clipPath33)" points=" 330 290 318 286 331 277" stroke="black"/>
+            <polygon clip-path="url(#clipPath32)" points=" 80 290 77 277 92 285" stroke="none"/>
+            <polygon fill="none" clip-path="url(#clipPath32)" points=" 80 290 77 277 92 285" stroke="black"/>
+            <line clip-path="url(#clipPath31)" fill="none" x1="290" x2="321" y1="231" y2="290" stroke="black"/>
+            <polygon clip-path="url(#clipPath33)" points=" 321 290 309 285 323 277" stroke="none"/>
+            <polygon fill="none" clip-path="url(#clipPath33)" points=" 321 290 309 285 323 277" stroke="black"/>
         </g>
     </g>
 </svg>

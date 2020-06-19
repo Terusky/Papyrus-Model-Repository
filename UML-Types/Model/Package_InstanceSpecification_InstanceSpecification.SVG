@@ -98,10 +98,10 @@
                 <path d="M69 196 L85 196 L85 212 L69 212 L69 196 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath27">
-                <path d="M241 199 L260 199 L260 212 L241 212 L241 199 Z"/>
+                <path d="M242 199 L261 199 L261 212 L242 212 L242 199 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath28">
-                <path d="M397 196 L412 196 L412 212 L397 212 L397 196 Z"/>
+                <path d="M398 196 L413 196 L413 212 L398 212 L398 196 Z"/>
             </clipPath>
         </defs>
         <g fill="url(#linearGradient1)" font-family="'Yu Gothic UI'" stroke-linejoin="round" stroke="url(#linearGradient1)" stroke-width="0" stroke-miterlimit="0">
@@ -138,12 +138,12 @@
         <g stroke-linecap="butt" fill="white" text-rendering="optimizeLegibility" font-family="'Segoe UI'" stroke="white" stroke-width="1.1">
             <polygon clip-path="url(#clipPath26)" points=" 70 210 71 197 83 209" stroke="none"/>
             <polygon fill="none" clip-path="url(#clipPath26)" points=" 70 210 71 197 83 209" stroke="black"/>
-            <line clip-path="url(#clipPath25)" fill="none" x1="250" x2="250" y1="131" y2="210" stroke="black"/>
-            <polygon clip-path="url(#clipPath27)" points=" 250 210 242 200 258 200" stroke="none"/>
-            <polygon fill="none" clip-path="url(#clipPath27)" points=" 250 210 242 200 258 200" stroke="black"/>
-            <line clip-path="url(#clipPath25)" fill="none" x1="350" x2="410" y1="131" y2="210" stroke="black"/>
-            <polygon clip-path="url(#clipPath28)" points=" 410 210 398 207 410 197" stroke="none"/>
-            <polygon fill="none" clip-path="url(#clipPath28)" points=" 410 210 398 207 410 197" stroke="black"/>
+            <line clip-path="url(#clipPath25)" fill="none" x1="250" x2="251" y1="131" y2="210" stroke="black"/>
+            <polygon clip-path="url(#clipPath27)" points=" 251 210 243 200 259 200" stroke="none"/>
+            <polygon fill="none" clip-path="url(#clipPath27)" points=" 251 210 243 200 259 200" stroke="black"/>
+            <line clip-path="url(#clipPath25)" fill="none" x1="350" x2="411" y1="131" y2="210" stroke="black"/>
+            <polygon clip-path="url(#clipPath28)" points=" 411 210 399 207 411 197" stroke="none"/>
+            <polygon fill="none" clip-path="url(#clipPath28)" points=" 411 210 399 207 411 197" stroke="black"/>
         </g>
     </g>
 </svg>
