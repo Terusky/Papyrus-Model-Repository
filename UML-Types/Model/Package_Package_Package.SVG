@@ -23,64 +23,64 @@
                 <path d="M170 10 L170 250 L490 250 L490 10 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath2">
-                <path d="M292 12 L371 12 L371 34 L292 34 L292 12 Z"/>
+                <path d="M290 12 L373 12 L373 34 L290 34 L290 12 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3">
                 <path d="M170 33 L492 33 L492 55 L170 55 L170 33 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath4">
-                <path d="M314 33 L368 33 L368 55 L314 55 L314 33 Z"/>
+                <path d="M313 33 L369 33 L369 55 L313 55 L313 33 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath5">
-                <path d="M301 55 L362 55 L362 76 L301 76 L301 55 Z"/>
+                <path d="M303 55 L360 55 L360 74 L303 74 L303 55 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath6">
-                <path d="M175 75 L488 75 L488 96 L175 96 L175 75 Z"/>
+                <path d="M175 73 L488 73 L488 92 L175 92 L175 73 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath7">
-                <path d="M194 75 L309 75 L309 96 L194 96 L194 75 Z"/>
+                <path d="M194 73 L306 73 L306 92 L194 92 L194 73 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath8">
-                <path d="M175 94 L488 94 L488 115 L175 115 L175 94 Z"/>
+                <path d="M175 90 L488 90 L488 109 L175 109 L175 90 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath9">
-                <path d="M194 94 L382 94 L382 115 L194 115 L194 94 Z"/>
+                <path d="M194 90 L377 90 L377 109 L194 109 L194 90 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath10">
-                <path d="M175 113 L488 113 L488 134 L175 134 L175 113 Z"/>
+                <path d="M175 107 L488 107 L488 126 L175 126 L175 107 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath11">
-                <path d="M194 113 L395 113 L395 134 L194 134 L194 113 Z"/>
+                <path d="M194 107 L390 107 L390 126 L194 126 L194 107 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath12">
-                <path d="M175 132 L488 132 L488 153 L175 153 L175 132 Z"/>
+                <path d="M175 124 L488 124 L488 143 L175 143 L175 124 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath13">
-                <path d="M194 132 L414 132 L414 153 L194 153 L194 132 Z"/>
+                <path d="M194 124 L407 124 L407 143 L194 143 L194 124 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath14">
-                <path d="M175 151 L488 151 L488 172 L175 172 L175 151 Z"/>
+                <path d="M175 141 L488 141 L488 160 L175 160 L175 141 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath15">
-                <path d="M194 151 L338 151 L338 172 L194 172 L194 151 Z"/>
+                <path d="M194 141 L335 141 L335 160 L194 160 L194 141 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath16">
-                <path d="M175 170 L488 170 L488 191 L175 191 L175 170 Z"/>
+                <path d="M175 158 L488 158 L488 177 L175 177 L175 158 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath17">
-                <path d="M194 170 L415 170 L415 191 L194 191 L194 170 Z"/>
+                <path d="M194 158 L412 158 L412 177 L194 177 L194 158 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath18">
-                <path d="M175 189 L488 189 L488 210 L175 210 L175 189 Z"/>
+                <path d="M175 175 L488 175 L488 194 L175 194 L175 175 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath19">
-                <path d="M194 189 L466 189 L466 210 L194 210 L194 189 Z"/>
+                <path d="M194 175 L459 175 L459 194 L194 194 L194 175 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath20">
-                <path d="M175 208 L488 208 L488 229 L175 229 L175 208 Z"/>
+                <path d="M175 192 L488 192 L488 211 L175 211 L175 192 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath21">
-                <path d="M194 208 L449 208 L449 229 L194 229 L194 208 Z"/>
+                <path d="M194 192 L442 192 L442 211 L194 211 L194 192 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath22">
                 <path d="M170 54 L492 54 L492 252 L170 252 L170 54 Z"/>
@@ -92,10 +92,10 @@
                 <path d="M10 290 L10 350 L190 350 L190 290 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath25">
-                <path d="M62 299 L141 299 L141 321 L62 321 L62 299 Z"/>
+                <path d="M60 299 L143 299 L143 321 L60 321 L60 299 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath26">
-                <path d="M34 320 L169 320 L169 342 L34 342 L34 320 Z"/>
+                <path d="M31 320 L171 320 L171 342 L31 342 L31 320 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath27">
                 <path d="M9 289 L192 289 L192 352 L9 352 L9 289 Z"/>
@@ -104,10 +104,10 @@
                 <path d="M230 290 L230 350 L430 350 L430 290 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath29">
-                <path d="M292 299 L371 299 L371 321 L292 321 L292 299 Z"/>
+                <path d="M290 299 L373 299 L373 321 L290 321 L290 299 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath30">
-                <path d="M259 320 L403 320 L403 342 L259 342 L259 320 Z"/>
+                <path d="M257 320 L405 320 L405 342 L257 342 L257 320 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath31">
                 <path d="M229 289 L432 289 L432 352 L229 352 L229 289 Z"/>
@@ -116,10 +116,10 @@
                 <path d="M470 290 L470 350 L589 350 L589 290 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath33">
-                <path d="M491 299 L570 299 L570 321 L491 321 L491 299 Z"/>
+                <path d="M489 299 L572 299 L572 321 L489 321 L489 299 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath34">
-                <path d="M492 320 L570 320 L570 342 L492 342 L492 320 Z"/>
+                <path d="M491 320 L571 320 L571 342 L491 342 L491 320 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath35">
                 <path d="M469 289 L591 289 L591 352 L469 352 L469 289 Z"/>
@@ -137,45 +137,45 @@
                 <path d="M517 277 L532 277 L532 295 L517 295 L517 277 Z"/>
             </clipPath>
         </defs>
-        <g font-size="14" fill="url(#linearGradient1)" font-family="'Ubuntu'" stroke-linejoin="round" stroke="url(#linearGradient1)" stroke-width="0" stroke-miterlimit="0">
+        <g fill="url(#linearGradient1)" font-family="'Yu Gothic UI'" stroke-linejoin="round" stroke="url(#linearGradient1)" stroke-width="0" stroke-miterlimit="0">
             <rect x="170" y="10" clip-path="url(#clipPath1)" width="321" height="241" stroke="none"/>
-            <text x="293" y="29" clip-path="url(#clipPath2)" fill="black" font-family="'Segoe UI'" stroke="none" xml:space="preserve">«Metaclass»</text>
-            <image stroke="black" width="16" xlink:show="embed" xlink:type="simple" fill="black" clip-path="url(#clipPath3)" preserveAspectRatio="none" height="16" font-family="'Segoe UI'" x="296" y="36" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWUlEQVR42mNgGPKA&#10;EUQoZCz4j0vBgxkJjPgMYIEx7k+Px5BUzFxIuQvwAZDr4C7YUBdAkuaApg2oXgAB&#10;MV5+kl3BRGksoLiAnZlCA5gZKTWAiQIDYKE6AgEAAu0P6M4KKrgAAAAASUVORK5C&#10;YII=" xlink:actuate="onLoad"/>
-            <text x="315" y="50" clip-path="url(#clipPath4)" fill="black" font-family="'Segoe UI'" stroke="none" xml:space="preserve">Package</text>
         </g>
-        <g stroke-miterlimit="0" stroke-width="0" font-size="13" font-family="'Segoe UI'" stroke-linejoin="round">
-            <text xml:space="preserve" x="302" y="70" clip-path="url(#clipPath5)" stroke="none">attributes</text>
-            <image x="176" y="77" clip-path="url(#clipPath6)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVR42mNgGAWM&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDoMA77/+gvW9P3HH4bI&#10;pvXYowtkKNC0P1CDUA0A2gwKxJUNgWCFyIGGHJAg6g/YK2hhAApVt/KVCOcyoIUB&#10;SqpBExv6AAAA13L8DwBmYwAAAABJRU5ErkJggg==" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-            <text xml:space="preserve" x="195" y="90" clip-path="url(#clipPath7)" stroke="none"> + URI: String [0..1]</text>
-            <image x="176" y="96" clip-path="url(#clipPath8)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVR42mNgGAWM&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDoMA77/+gvW9P3HH4bI&#10;pvXYowtkKNC0P1CDUA0A2gwKxJUNgWCFyIGGHJAg6g/YK2hhAApVt/KVCOcyoIUB&#10;SqpBExv6AAAA13L8DwBmYwAAAABJRU5ErkJggg==" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-            <text xml:space="preserve" x="195" y="109" clip-path="url(#clipPath9)" stroke="none"> +/ nestedPackage: Package [*]</text>
-            <image x="176" y="115" clip-path="url(#clipPath10)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVR42mNgGAWM&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDoMA77/+gvW9P3HH4bI&#10;pvXYowtkKNC0P1CDUA0A2gwKxJUNgWCFyIGGHJAg6g/YK2hhAApVt/KVCOcyoIUB&#10;SqpBExv6AAAA13L8DwBmYwAAAABJRU5ErkJggg==" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-            <text xml:space="preserve" x="195" y="128" clip-path="url(#clipPath11)" stroke="none"> + nestingPackage: Package [0..1]</text>
-            <image x="176" y="134" clip-path="url(#clipPath12)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVR42mNgGAWM&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDoMA77/+gvW9P3HH4bI&#10;pvXYowtkKNC0P1CDUA0A2gwKxJUNgWCFyIGGHJAg6g/YK2hhAApVt/KVCOcyoIUB&#10;SqpBExv6AAAA13L8DwBmYwAAAABJRU5ErkJggg==" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-            <text xml:space="preserve" x="195" y="147" clip-path="url(#clipPath13)" stroke="none"> +/ ownedStereotype: Stereotype [*]</text>
-            <image x="176" y="153" clip-path="url(#clipPath14)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVR42mNgGAWM&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDoMA77/+gvW9P3HH4bI&#10;pvXYowtkKNC0P1CDUA0A2gwKxJUNgWCFyIGGHJAg6g/YK2hhAApVt/KVCOcyoIUB&#10;SqpBExv6AAAA13L8DwBmYwAAAABJRU5ErkJggg==" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-            <text xml:space="preserve" x="195" y="166" clip-path="url(#clipPath15)" stroke="none"> +/ ownedType: Type [*]</text>
-            <image x="176" y="172" clip-path="url(#clipPath16)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVR42mNgGAWM&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDoMA77/+gvW9P3HH4bI&#10;pvXYowtkKNC0P1CDUA0A2gwKxJUNgWCFyIGGHJAg6g/YK2hhAApVt/KVCOcyoIUB&#10;SqpBExv6AAAA13L8DwBmYwAAAABJRU5ErkJggg==" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-            <text xml:space="preserve" x="195" y="185" clip-path="url(#clipPath17)" stroke="none"> + packageMerge: PackageMerge [*]</text>
-            <image x="176" y="191" clip-path="url(#clipPath18)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVR42mNgGAWM&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDoMA77/+gvW9P3HH4bI&#10;pvXYowtkKNC0P1CDUA0A2gwKxJUNgWCFyIGGHJAg6g/YK2hhAApVt/KVCOcyoIUB&#10;SqpBExv6AAAA13L8DwBmYwAAAABJRU5ErkJggg==" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-            <text xml:space="preserve" x="195" y="204" clip-path="url(#clipPath19)" stroke="none"> + packagedElement: PackageableElement [*]</text>
-            <image x="176" y="210" clip-path="url(#clipPath20)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVR42mNgGAWM&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDoMA77/+gvW9P3HH4bI&#10;pvXYowtkKNC0P1CDUA0A2gwKxJUNgWCFyIGGHJAg6g/YK2hhAApVt/KVCOcyoIUB&#10;SqpBExv6AAAA13L8DwBmYwAAAABJRU5ErkJggg==" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-            <text xml:space="preserve" x="195" y="223" clip-path="url(#clipPath21)" stroke="none"> + profileApplication: ProfileApplication [*]</text>
+        <g stroke-miterlimit="0" stroke-width="0" font-size="14" font-family="'Segoe UI'" stroke-linejoin="round">
+            <text xml:space="preserve" x="291" y="29" clip-path="url(#clipPath2)" stroke="none">«Metaclass»</text>
+            <image x="295" y="36" clip-path="url(#clipPath3)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWUlEQVR42mNgGPKA&#13;&#10;EUQoZCz4j0vBgxkJjPgMYIEx7k+Px5BUzFxIuQvwAZDr4C7YUBdAkuaApg2oXgAB&#13;&#10;MV5+kl3BRGksoLiAnZlCA5gZKTWAiQIDYKE6AgEAAu0P6M4KKrgAAAAASUVORK5C&#13;&#10;YII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+            <text xml:space="preserve" x="314" y="50" clip-path="url(#clipPath4)" stroke="none">Package</text>
+            <text x="304" font-size="13" y="70" clip-path="url(#clipPath5)" stroke="none" xml:space="preserve">attributes</text>
+            <image width="16" xlink:show="embed" xlink:type="simple" clip-path="url(#clipPath6)" preserveAspectRatio="none" height="16" x="176" y="74" font-size="13" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVR42mNgGAWM&#13;&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#13;&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#13;&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDoMA77/+gvW9P3HH4bI&#13;&#10;pvXYowtkKNC0P1CDUA0A2gwKxJUNgWCFyIGGHJAg6g/YK2hhAApVt/KVCOcyoIUB&#13;&#10;SqpBExv6AAAA13L8DwBmYwAAAABJRU5ErkJggg==" xlink:actuate="onLoad"/>
+            <text x="195" font-size="13" y="88" clip-path="url(#clipPath7)" stroke="none" xml:space="preserve"> + URI: String [0..1]</text>
+            <image width="16" xlink:show="embed" xlink:type="simple" clip-path="url(#clipPath8)" preserveAspectRatio="none" height="16" x="176" y="91" font-size="13" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVR42mNgGAWM&#13;&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#13;&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#13;&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDoMA77/+gvW9P3HH4bI&#13;&#10;pvXYowtkKNC0P1CDUA0A2gwKxJUNgWCFyIGGHJAg6g/YK2hhAApVt/KVCOcyoIUB&#13;&#10;SqpBExv6AAAA13L8DwBmYwAAAABJRU5ErkJggg==" xlink:actuate="onLoad"/>
+            <text x="195" font-size="13" y="105" clip-path="url(#clipPath9)" stroke="none" xml:space="preserve"> +/ nestedPackage: Package [*]</text>
+            <image width="16" xlink:show="embed" xlink:type="simple" clip-path="url(#clipPath10)" preserveAspectRatio="none" height="16" x="176" y="108" font-size="13" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVR42mNgGAWM&#13;&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#13;&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#13;&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDoMA77/+gvW9P3HH4bI&#13;&#10;pvXYowtkKNC0P1CDUA0A2gwKxJUNgWCFyIGGHJAg6g/YK2hhAApVt/KVCOcyoIUB&#13;&#10;SqpBExv6AAAA13L8DwBmYwAAAABJRU5ErkJggg==" xlink:actuate="onLoad"/>
+            <text x="195" font-size="13" y="122" clip-path="url(#clipPath11)" stroke="none" xml:space="preserve"> + nestingPackage: Package [0..1]</text>
+            <image width="16" xlink:show="embed" xlink:type="simple" clip-path="url(#clipPath12)" preserveAspectRatio="none" height="16" x="176" y="125" font-size="13" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVR42mNgGAWM&#13;&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#13;&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#13;&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDoMA77/+gvW9P3HH4bI&#13;&#10;pvXYowtkKNC0P1CDUA0A2gwKxJUNgWCFyIGGHJAg6g/YK2hhAApVt/KVCOcyoIUB&#13;&#10;SqpBExv6AAAA13L8DwBmYwAAAABJRU5ErkJggg==" xlink:actuate="onLoad"/>
+            <text x="195" font-size="13" y="139" clip-path="url(#clipPath13)" stroke="none" xml:space="preserve"> +/ ownedStereotype: Stereotype [*]</text>
+            <image width="16" xlink:show="embed" xlink:type="simple" clip-path="url(#clipPath14)" preserveAspectRatio="none" height="16" x="176" y="142" font-size="13" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVR42mNgGAWM&#13;&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#13;&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#13;&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDoMA77/+gvW9P3HH4bI&#13;&#10;pvXYowtkKNC0P1CDUA0A2gwKxJUNgWCFyIGGHJAg6g/YK2hhAApVt/KVCOcyoIUB&#13;&#10;SqpBExv6AAAA13L8DwBmYwAAAABJRU5ErkJggg==" xlink:actuate="onLoad"/>
+            <text x="195" font-size="13" y="156" clip-path="url(#clipPath15)" stroke="none" xml:space="preserve"> +/ ownedType: Type [*]</text>
+            <image width="16" xlink:show="embed" xlink:type="simple" clip-path="url(#clipPath16)" preserveAspectRatio="none" height="16" x="176" y="159" font-size="13" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVR42mNgGAWM&#13;&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#13;&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#13;&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDoMA77/+gvW9P3HH4bI&#13;&#10;pvXYowtkKNC0P1CDUA0A2gwKxJUNgWCFyIGGHJAg6g/YK2hhAApVt/KVCOcyoIUB&#13;&#10;SqpBExv6AAAA13L8DwBmYwAAAABJRU5ErkJggg==" xlink:actuate="onLoad"/>
+            <text x="195" font-size="13" y="173" clip-path="url(#clipPath17)" stroke="none" xml:space="preserve"> + packageMerge: PackageMerge [*]</text>
+            <image width="16" xlink:show="embed" xlink:type="simple" clip-path="url(#clipPath18)" preserveAspectRatio="none" height="16" x="176" y="176" font-size="13" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVR42mNgGAWM&#13;&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#13;&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#13;&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDoMA77/+gvW9P3HH4bI&#13;&#10;pvXYowtkKNC0P1CDUA0A2gwKxJUNgWCFyIGGHJAg6g/YK2hhAApVt/KVCOcyoIUB&#13;&#10;SqpBExv6AAAA13L8DwBmYwAAAABJRU5ErkJggg==" xlink:actuate="onLoad"/>
+            <text x="195" font-size="13" y="190" clip-path="url(#clipPath19)" stroke="none" xml:space="preserve"> + packagedElement: PackageableElement [*]</text>
+            <image width="16" xlink:show="embed" xlink:type="simple" clip-path="url(#clipPath20)" preserveAspectRatio="none" height="16" x="176" y="193" font-size="13" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVR42mNgGAWM&#13;&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#13;&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#13;&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDoMA77/+gvW9P3HH4bI&#13;&#10;pvXYowtkKNC0P1CDUA0A2gwKxJUNgWCFyIGGHJAg6g/YK2hhAApVt/KVCOcyoIUB&#13;&#10;SqpBExv6AAAA13L8DwBmYwAAAABJRU5ErkJggg==" xlink:actuate="onLoad"/>
+            <text x="195" font-size="13" y="207" clip-path="url(#clipPath21)" stroke="none" xml:space="preserve"> + profileApplication: ProfileApplication [*]</text>
         </g>
-        <g stroke-width="1.1" font-size="14" font-family="'Ubuntu'" stroke-linecap="butt">
+        <g stroke-width="1.1" font-family="'Yu Gothic UI'" stroke-linecap="butt">
             <line clip-path="url(#clipPath22)" fill="none" x1="170" x2="491" y1="55" y2="55"/>
             <rect x="170" y="10" clip-path="url(#clipPath23)" fill="none" width="320" rx="0" ry="0" height="240"/>
             <rect x="10" y="290" clip-path="url(#clipPath24)" fill="url(#linearGradient2)" width="181" height="61" stroke="none"/>
-            <text x="63" y="316" clip-path="url(#clipPath25)" font-family="'Segoe UI'" stroke="none" xml:space="preserve">«Metaclass»</text>
-            <text x="35" y="337" clip-path="url(#clipPath26)" font-family="'Segoe UI'" stroke="none" xml:space="preserve">PackageableElement</text>
+            <text x="61" font-size="14" y="316" clip-path="url(#clipPath25)" font-family="'Segoe UI'" stroke="none" xml:space="preserve">«Metaclass»</text>
+            <text x="32" font-size="14" y="337" clip-path="url(#clipPath26)" font-family="'Segoe UI'" stroke="none" xml:space="preserve">PackageableElement</text>
             <rect x="10" y="290" clip-path="url(#clipPath27)" fill="none" width="180" rx="0" ry="0" height="60"/>
             <rect x="230" y="290" clip-path="url(#clipPath28)" fill="url(#linearGradient3)" width="201" height="61" stroke="none"/>
-            <text x="293" y="316" clip-path="url(#clipPath29)" font-family="'Segoe UI'" stroke="none" xml:space="preserve">«Metaclass»</text>
-            <text x="260" y="337" clip-path="url(#clipPath30)" font-family="'Segoe UI'" stroke="none" xml:space="preserve">TemplateableElement</text>
+            <text x="291" font-size="14" y="316" clip-path="url(#clipPath29)" font-family="'Segoe UI'" stroke="none" xml:space="preserve">«Metaclass»</text>
+            <text x="258" font-size="14" y="337" clip-path="url(#clipPath30)" font-family="'Segoe UI'" stroke="none" xml:space="preserve">TemplateableElement</text>
             <rect x="230" y="290" clip-path="url(#clipPath31)" fill="none" width="200" rx="0" ry="0" height="60"/>
             <rect x="470" y="290" clip-path="url(#clipPath32)" fill="url(#linearGradient4)" width="120" height="61" stroke="none"/>
-            <text x="492" y="316" clip-path="url(#clipPath33)" font-family="'Segoe UI'" stroke="none" xml:space="preserve">«Metaclass»</text>
-            <text x="493" y="337" clip-path="url(#clipPath34)" font-family="'Segoe UI'" stroke="none" xml:space="preserve">Namespace</text>
+            <text x="490" font-size="14" y="316" clip-path="url(#clipPath33)" font-family="'Segoe UI'" stroke="none" xml:space="preserve">«Metaclass»</text>
+            <text x="492" font-size="14" y="337" clip-path="url(#clipPath34)" font-family="'Segoe UI'" stroke="none" xml:space="preserve">Namespace</text>
             <rect x="470" y="290" clip-path="url(#clipPath35)" fill="none" width="119" rx="0" ry="0" height="60"/>
             <line clip-path="url(#clipPath36)" fill="none" text-rendering="optimizeLegibility" x1="210" x2="90" y1="251" y2="290"/>
         </g>

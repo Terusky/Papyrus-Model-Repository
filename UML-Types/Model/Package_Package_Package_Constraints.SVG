@@ -15,13 +15,13 @@
                 <path d="M10 10 L10 90 L450 90 L450 22 L438 10 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath2">
-                <path d="M15 15 L437 15 L437 36 L15 36 L15 15 Z"/>
+                <path d="M15 15 L437 15 L437 34 L15 34 L15 15 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3">
-                <path d="M153 15 L317 15 L317 36 L153 36 L153 15 Z"/>
+                <path d="M157 15 L314 15 L314 34 L157 34 L157 15 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath4">
-                <path d="M15 34 L436 34 L436 74 L15 74 L15 34 Z"/>
+                <path d="M15 32 L429 32 L429 68 L15 68 L15 32 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath5">
                 <path d="M9 9 L452 9 L452 92 L9 92 L9 9 Z"/>
@@ -30,7 +30,7 @@
                 <path d="M470 10 L470 90 L750 90 L750 22 L738 10 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath7">
-                <path d="M475 15 L726 15 L726 55 L475 55 L475 15 Z"/>
+                <path d="M475 15 L716 15 L716 51 L475 51 L475 15 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath8">
                 <path d="M469 9 L752 9 L752 92 L469 92 L469 9 Z"/>
@@ -38,10 +38,10 @@
         </defs>
         <g font-size="13" fill="url(#linearGradient1)" font-family="'Segoe UI'" stroke-linejoin="round" stroke="url(#linearGradient1)" stroke-width="0" stroke-miterlimit="0">
             <rect x="10" y="10" clip-path="url(#clipPath1)" width="441" height="81" stroke="none"/>
-            <image stroke="black" width="16" xlink:show="embed" xlink:type="simple" fill="black" clip-path="url(#clipPath2)" preserveAspectRatio="none" height="16" x="135" y="17" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAvElEQVR42mNgGPKA&#10;EZkzf8v1/yt2XGbYOSWM8dGLz//RFctJ8DK656z6H+Ghy5DoownWy4xL894zTxja&#10;5x1l2HzoDhhzc3EyTO7raMgJM2L8IWTfUFPX1LBx2dRGFmzOAmmGGYZsODbAhMtv&#10;IGcSA7C6AOY/ZNuR/Y3hApii2TWeDNgCFV0zSB1IHCTPBLMRpCi1ZTtRzgapgxnK&#10;gk8hzNadU0gMA2L9jzcWSI0NuI2glIZPDUgepG7wZCYA6Qdwf4BRarkAAAAASUVO&#10;RK5CYII=" xlink:actuate="onLoad"/>
-            <text x="154" y="30" clip-path="url(#clipPath3)" fill="black" stroke="none" xml:space="preserve">elements_public_or_private</text>
-            <text x="16" y="49" clip-path="url(#clipPath4)" fill="black" stroke="none" xml:space="preserve">{{OCL} packagedElement-&gt;forAll(e | e.visibility&lt;&gt; null implies e.visibility</text>
-            <text x="16" y="68" clip-path="url(#clipPath4)" fill="black" stroke="none" xml:space="preserve">= VisibilityKind::public or e.visibility = VisibilityKind::private)}</text>
+            <image stroke="black" width="16" xlink:show="embed" xlink:type="simple" fill="black" clip-path="url(#clipPath2)" preserveAspectRatio="none" height="16" x="139" y="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAvElEQVR42mNgGPKA&#13;&#10;EZkzf8v1/yt2XGbYOSWM8dGLz//RFctJ8DK656z6H+Ghy5DoownWy4xL894zTxja&#13;&#10;5x1l2HzoDhhzc3EyTO7raMgJM2L8IWTfUFPX1LBx2dRGFmzOAmmGGYZsODbAhMtv&#13;&#10;IGcSA7C6AOY/ZNuR/Y3hApii2TWeDNgCFV0zSB1IHCTPBLMRpCi1ZTtRzgapgxnK&#13;&#10;gk8hzNadU0gMA2L9jzcWSI0NuI2glIZPDUgepG7wZCYA6Qdwf4BRarkAAAAASUVO&#13;&#10;RK5CYII=" xlink:actuate="onLoad"/>
+            <text x="158" y="30" clip-path="url(#clipPath3)" fill="black" stroke="none" xml:space="preserve">elements_public_or_private</text>
+            <text x="16" y="47" clip-path="url(#clipPath4)" fill="black" stroke="none" xml:space="preserve">{{OCL} packagedElement-&gt;forAll(e | e.visibility&lt;&gt; null implies e.visibility</text>
+            <text x="16" y="64" clip-path="url(#clipPath4)" fill="black" stroke="none" xml:space="preserve">= VisibilityKind::public or e.visibility = VisibilityKind::private)}</text>
         </g>
         <g stroke-width="1.1" font-size="13" font-family="'Segoe UI'" stroke-linecap="butt">
             <line clip-path="url(#clipPath5)" fill="none" x1="10" x2="438" y1="10" y2="10"/>
@@ -54,7 +54,7 @@
             <line clip-path="url(#clipPath5)" fill="none" x1="438" x2="451" y1="22" y2="22"/>
             <rect x="470" y="10" clip-path="url(#clipPath6)" fill="url(#linearGradient2)" width="281" height="81" stroke="none"/>
             <text xml:space="preserve" x="476" y="30" clip-path="url(#clipPath7)" stroke="none">If an element that is owned by a package</text>
-            <text xml:space="preserve" x="476" y="49" clip-path="url(#clipPath7)" stroke="none">has visibility, it is public or private.</text>
+            <text xml:space="preserve" x="476" y="47" clip-path="url(#clipPath7)" stroke="none">has visibility, it is public or private.</text>
             <line clip-path="url(#clipPath8)" fill="none" x1="470" x2="738" y1="10" y2="10"/>
             <line clip-path="url(#clipPath8)" fill="none" x1="738" x2="750" y1="10" y2="22"/>
             <line clip-path="url(#clipPath8)" fill="none" x1="750" x2="750" y1="22" y2="90"/>
