@@ -27,4 +27,5 @@
   <packagedElement xmi:type="uml:Package" xmi:id="_YfbMAKy6EeqT47TZHamjEA" name="Dependency"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_RO8ykKy7EeqT47TZHamjEA" name="Deployment"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_QbW9AKy8EeqT47TZHamjEA" name="Parameter"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_uy1IgLKgEeqBeqnlgZkINA" name="Connector"/>
 </uml:Model>
