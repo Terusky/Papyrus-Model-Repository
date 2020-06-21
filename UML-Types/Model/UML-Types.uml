@@ -28,4 +28,6 @@
   <packagedElement xmi:type="uml:Package" xmi:id="_RO8ykKy7EeqT47TZHamjEA" name="Deployment"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_QbW9AKy8EeqT47TZHamjEA" name="Parameter"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_uy1IgLKgEeqBeqnlgZkINA" name="Connector"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NcSCoLLkEeqBeqnlgZkINA" name="ConnectorEnd"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_tg_VQLLkEeqBeqnlgZkINA" name="Port"/>
 </uml:Model>
