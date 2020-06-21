@@ -30,4 +30,5 @@
   <packagedElement xmi:type="uml:Package" xmi:id="_uy1IgLKgEeqBeqnlgZkINA" name="Connector"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_NcSCoLLkEeqBeqnlgZkINA" name="ConnectorEnd"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_tg_VQLLkEeqBeqnlgZkINA" name="Port"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_y3Lt4LOUEeq0geAn_aDn8g" name="Component"/>
 </uml:Model>
