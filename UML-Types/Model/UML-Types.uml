@@ -32,4 +32,6 @@
   <packagedElement xmi:type="uml:Package" xmi:id="_tg_VQLLkEeqBeqnlgZkINA" name="Port"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_y3Lt4LOUEeq0geAn_aDn8g" name="Component"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_29-5QLOWEeqoPs0p813ewQ" name="Signal"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_BWOQoLRhEeqdjKFx4Vjewg" name="Action"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_4NZ1gLRhEeqdjKFx4Vjewg" name="Activity"/>
 </uml:Model>
