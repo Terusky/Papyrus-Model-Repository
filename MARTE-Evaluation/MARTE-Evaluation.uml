@@ -4,6 +4,45 @@
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
   <packagedElement xmi:type="uml:Package" xmi:id="_H15s8LeaEeqsvO3Xab3B1w" name="HRM">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_fe2n0LjlEeqdOu6ARQTPjQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_2dtsgAPMEdyuUt-4qHuVvQ"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_fe_xwLjlEeqdOu6ARQTPjQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_P80EcBJwEdygQ5HMNSpiZw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_ffAY0LjlEeqdOu6ARQTPjQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_aMhZsBJwEdygQ5HMNSpiZw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_ffA_4LjlEeqdOu6ARQTPjQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_bmL7UBJwEdygQ5HMNSpiZw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_ffCOALjlEeqdOu6ARQTPjQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_dG2c0BJwEdygQ5HMNSpiZw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_ffC1ELjlEeqdOu6ARQTPjQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_ja8REBJwEdygQ5HMNSpiZw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_ffDcILjlEeqdOu6ARQTPjQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_ZJjPoEIbEd6dmI2dd6jVFQ"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_ffEDMLjlEeqdOu6ARQTPjQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_gHI-ABJwEdygQ5HMNSpiZw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_ffEDMbjlEeqdOu6ARQTPjQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_hst0sBJwEdygQ5HMNSpiZw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_ffEqQLjlEeqdOu6ARQTPjQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_R7sL8BJwEdygQ5HMNSpiZw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_ffFRULjlEeqdOu6ARQTPjQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_uAf6gBJwEdygQ5HMNSpiZw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_ffFRUbjlEeqdOu6ARQTPjQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_vrbyUBJwEdygQ5HMNSpiZw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_ffFRUrjlEeqdOu6ARQTPjQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_WGZ44BJwEdygQ5HMNSpiZw"/>
+    </packageImport>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_L4nUcLeaEeqsvO3Xab3B1w">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_L4qXwLeaEeqsvO3Xab3B1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM"/>
@@ -84,6 +123,21 @@
     </profileApplication>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_O4MD8LeaEeqsvO3Xab3B1w" name="SRM">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_jVrIYLjlEeqdOu6ARQTPjQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_3VS0wAPMEdyuUt-4qHuVvQ"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_jVwA4LjlEeqdOu6ARQTPjQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_-1fcUBJdEdy3Td9UhuLFPg"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_jVwn8LjlEeqdOu6ARQTPjQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_A_vtYBJeEdy3Td9UhuLFPg"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_jVxPALjlEeqdOu6ARQTPjQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_Cf874BJeEdy3Td9UhuLFPg"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_jVxPAbjlEeqdOu6ARQTPjQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_EIfnABJeEdy3Td9UhuLFPg"/>
+    </packageImport>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RQuooLeaEeqsvO3Xab3B1w">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RQv2wLeaEeqsvO3Xab3B1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/SRM"/>
