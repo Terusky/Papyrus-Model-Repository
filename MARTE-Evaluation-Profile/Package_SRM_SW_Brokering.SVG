@@ -298,10 +298,10 @@
                 <path d="M-1 -1 L902 -1 L902 801 L-1 801 L-1 -1 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath91">
-                <path d="M455 376 L472 376 L472 392 L455 392 L455 376 Z"/>
+                <path d="M584 376 L600 376 L600 392 L584 392 L584 376 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath92">
-                <path d="M584 376 L600 376 L600 392 L584 392 L584 376 Z"/>
+                <path d="M455 376 L472 376 L472 392 L455 392 L455 376 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath93">
                 <path d="M444 674 L457 674 L457 692 L444 692 L444 674 Z"/>
@@ -409,23 +409,23 @@
             <text x="371" font-size="14" y="730" clip-path="url(#clipPath87)" font-family="'Segoe UI'" stroke="none" xml:space="preserve">«EPackage»</text>
             <text x="376" font-size="14" y="751" clip-path="url(#clipPath88)" font-family="'Segoe UI'" stroke="none" xml:space="preserve">SW_ResourceCore</text>
             <line clip-path="url(#clipPath89)" fill="none" x1="370" x2="569" y1="758" y2="758"/>
-            <line clip-path="url(#clipPath90)" fill="none" text-rendering="optimizeLegibility" x1="434" x2="468" y1="331" y2="390"/>
+            <line clip-path="url(#clipPath90)" fill="none" text-rendering="optimizeLegibility" x1="629" x2="586" y1="331" y2="390"/>
         </g>
         <g stroke-linecap="butt" fill="white" text-rendering="optimizeLegibility" font-family="'Segoe UI'" stroke="white" stroke-width="1.1">
-            <polygon clip-path="url(#clipPath91)" points=" 468 390 456 385 470 377" stroke="none"/>
-            <polygon fill="none" clip-path="url(#clipPath91)" points=" 468 390 456 385 470 377" stroke="black"/>
-            <line clip-path="url(#clipPath90)" fill="none" x1="629" x2="586" y1="331" y2="390" stroke="black"/>
-            <polygon clip-path="url(#clipPath92)" points=" 586 390 585 377 598 387" stroke="none"/>
-            <polygon fill="none" clip-path="url(#clipPath92)" points=" 586 390 585 377 598 387" stroke="black"/>
+            <polygon clip-path="url(#clipPath91)" points=" 586 390 585 377 598 387" stroke="none"/>
+            <polygon fill="none" clip-path="url(#clipPath91)" points=" 586 390 585 377 598 387" stroke="black"/>
+            <line clip-path="url(#clipPath90)" fill="none" x1="434" x2="468" y1="331" y2="390" stroke="black"/>
+            <polygon clip-path="url(#clipPath92)" points=" 468 390 456 385 470 377" stroke="none"/>
+            <polygon fill="none" clip-path="url(#clipPath92)" points=" 468 390 456 385 470 377" stroke="black"/>
             <line clip-path="url(#clipPath90)" fill="none" x1="450" x2="450" y1="611" y2="690" stroke-dasharray="5,5,5,5,5,5,5,5,5,5" stroke="black"/>
             <line clip-path="url(#clipPath93)" fill="none" x1="445" x2="450" y1="675" y2="690" stroke="black"/>
             <line clip-path="url(#clipPath93)" fill="none" x1="450" x2="455" y1="690" y2="675" stroke="black"/>
             <line clip-path="url(#clipPath90)" fill="none" x1="434" x2="468" y1="331" y2="390" stroke="black"/>
-            <polygon clip-path="url(#clipPath91)" points=" 468 390 456 385 470 377" stroke="none"/>
-            <polygon fill="none" clip-path="url(#clipPath91)" points=" 468 390 456 385 470 377" stroke="black"/>
+            <polygon clip-path="url(#clipPath92)" points=" 468 390 456 385 470 377" stroke="none"/>
+            <polygon fill="none" clip-path="url(#clipPath92)" points=" 468 390 456 385 470 377" stroke="black"/>
             <line clip-path="url(#clipPath90)" fill="none" x1="629" x2="586" y1="331" y2="390" stroke="black"/>
-            <polygon clip-path="url(#clipPath92)" points=" 586 390 585 377 598 387" stroke="none"/>
-            <polygon fill="none" clip-path="url(#clipPath92)" points=" 586 390 585 377 598 387" stroke="black"/>
+            <polygon clip-path="url(#clipPath91)" points=" 586 390 585 377 598 387" stroke="none"/>
+            <polygon fill="none" clip-path="url(#clipPath91)" points=" 586 390 585 377 598 387" stroke="black"/>
         </g>
     </g>
 </svg>

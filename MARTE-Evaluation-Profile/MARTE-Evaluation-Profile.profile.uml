@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_s8XVALkVEeqdOu6ARQTPjQ" name="MARTE-Evaluation-Profile">
   <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Lj0mgLkWEeqdOu6ARQTPjQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SCO4ULmuEeqDC7PSdOYTIA" source="PapyrusVersion">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SCPfYLmuEeqDC7PSdOYTIA" key="Version" value="0.0.0"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SCPfYbmuEeqDC7PSdOYTIA" key="Comment" value="&lt;undefined>"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SCPfYrmuEeqDC7PSdOYTIA" key="Copyright" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SCPfY7muEeqDC7PSdOYTIA" key="Date" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SCPfZLmuEeqDC7PSdOYTIA" key="Author" value="&lt;undefined>"/>
+    </eAnnotations>
+    <contents xmi:type="ecore:EPackage" xmi:id="__3xHcbm3EeqDC7PSdOYTIA" name="MARTEEvaluationProfile" nsURI="http:///schemas/MARTEEvaluationProfile/__3xHcLm3EeqDC7PSdOYTIA/8" nsPrefix="MARTEEvaluationProfile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__3xHcrm3EeqDC7PSdOYTIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__3xHc7m3EeqDC7PSdOYTIA" key="originalName" value="MARTE-Evaluation-Profile"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__3xHeLm3EeqDC7PSdOYTIA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__3xHebm3EeqDC7PSdOYTIA" key="Version" value="0.0.9"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__3xHerm3EeqDC7PSdOYTIA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__3xHe7m3EeqDC7PSdOYTIA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__3xHfLm3EeqDC7PSdOYTIA" key="Date" value="2020-06-29"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__3xHfbm3EeqDC7PSdOYTIA" key="Author" value=""/>
+      </eAnnotations>
+      <eSubpackages xmi:type="ecore:EPackage" xmi:id="__3xHdLm3EeqDC7PSdOYTIA" name="SRM" nsURI="http:///MARTEEvaluationProfile/SRM.ecore" nsPrefix="MARTEEvaluationProfile.SRM">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__3xHdbm3EeqDC7PSdOYTIA" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_u68hkLkVEeqdOu6ARQTPjQ"/>
+      </eSubpackages>
+      <eSubpackages xmi:type="ecore:EPackage" xmi:id="__3xHdrm3EeqDC7PSdOYTIA" name="HLAM" nsURI="http:///MARTEEvaluationProfile/HLAM.ecore" nsPrefix="MARTEEvaluationProfile.HLAM">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__3xHd7m3EeqDC7PSdOYTIA" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_SCIxsLmuEeqDC7PSdOYTIA"/>
+      </eSubpackages>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_9m8DYLmuEeqDC7PSdOYTIA" name="MARTEEvaluationProfile" nsURI="http:///schemas/MARTEEvaluationProfile/_9m5AELmuEeqDC7PSdOYTIA/7" nsPrefix="MARTEEvaluationProfile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9m8DYbmuEeqDC7PSdOYTIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9m8DYrmuEeqDC7PSdOYTIA" key="originalName" value="MARTE-Evaluation-Profile"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9m8qcLmuEeqDC7PSdOYTIA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9m8qcbmuEeqDC7PSdOYTIA" key="Version" value="0.0.8"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9m8qcrmuEeqDC7PSdOYTIA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9m8qc7muEeqDC7PSdOYTIA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9m8qdLmuEeqDC7PSdOYTIA" key="Date" value="2020-06-29"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9m8qdbmuEeqDC7PSdOYTIA" key="Author" value=""/>
+      </eAnnotations>
+      <eSubpackages xmi:type="ecore:EPackage" xmi:id="_9m8DY7muEeqDC7PSdOYTIA" name="SRM" nsURI="http:///MARTEEvaluationProfile/SRM.ecore" nsPrefix="MARTEEvaluationProfile.SRM">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9m8DZLmuEeqDC7PSdOYTIA" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_u68hkLkVEeqdOu6ARQTPjQ"/>
+      </eSubpackages>
+      <eSubpackages xmi:type="ecore:EPackage" xmi:id="_9m8DZbmuEeqDC7PSdOYTIA" name="HLAM" nsURI="http:///MARTEEvaluationProfile/HLAM.ecore" nsPrefix="MARTEEvaluationProfile.HLAM">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9m8DZrmuEeqDC7PSdOYTIA" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_SCIxsLmuEeqDC7PSdOYTIA"/>
+      </eSubpackages>
+    </contents>
     <contents xmi:type="ecore:EPackage" xmi:id="_CX4O0bkrEeqdOu6ARQTPjQ" name="MARTEEvaluationProfile" nsURI="http:///schemas/MARTEEvaluationProfile/_CX4O0LkrEeqdOu6ARQTPjQ/6" nsPrefix="MARTEEvaluationProfile">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CX4O0rkrEeqdOu6ARQTPjQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CX4O07krEeqdOu6ARQTPjQ" key="originalName" value="MARTE-Evaluation-Profile"/>
@@ -128,6 +171,11 @@
     </packageImport>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_xiOs4LkVEeqdOu6ARQTPjQ">
       <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_EIfnABJeEdy3Td9UhuLFPg"/>
+    </packageImport>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_SCIxsLmuEeqDC7PSdOYTIA" name="HLAM">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_V7g3ALmuEeqDC7PSdOYTIA">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_yNSZIAPMEdyuUt-4qHuVvQ"/>
     </packageImport>
   </packagedElement>
 </uml:Profile>
