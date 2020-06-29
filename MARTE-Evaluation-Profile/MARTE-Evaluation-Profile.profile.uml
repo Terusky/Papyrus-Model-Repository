@@ -8,6 +8,36 @@
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SCPfY7muEeqDC7PSdOYTIA" key="Date" value=""/>
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SCPfZLmuEeqDC7PSdOYTIA" key="Author" value="&lt;undefined>"/>
     </eAnnotations>
+    <contents xmi:type="ecore:EPackage" xmi:id="_AaXSALoXEequZOhpqc8FFw" name="MARTEEvaluationProfile" nsURI="http:///schemas/MARTEEvaluationProfile/_AaTAkLoXEequZOhpqc8FFw/12" nsPrefix="MARTEEvaluationProfile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AaXSAboXEequZOhpqc8FFw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AaXSAroXEequZOhpqc8FFw" key="originalName" value="MARTE-Evaluation-Profile"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AaemwLoXEequZOhpqc8FFw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AaemwboXEequZOhpqc8FFw" key="Version" value="0.0.13"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AaemwroXEequZOhpqc8FFw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Aaemw7oXEequZOhpqc8FFw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AaemxLoXEequZOhpqc8FFw" key="Date" value="2020-06-29"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AaemxboXEequZOhpqc8FFw" key="Author" value=""/>
+      </eAnnotations>
+      <eSubpackages xmi:type="ecore:EPackage" xmi:id="_AaXSA7oXEequZOhpqc8FFw" name="SRM" nsURI="http:///MARTEEvaluationProfile/SRM.ecore" nsPrefix="MARTEEvaluationProfile.SRM">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AaXSBLoXEequZOhpqc8FFw" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_u68hkLkVEeqdOu6ARQTPjQ"/>
+      </eSubpackages>
+      <eSubpackages xmi:type="ecore:EPackage" xmi:id="_AaXSBboXEequZOhpqc8FFw" name="HLAM" nsURI="http:///MARTEEvaluationProfile/HLAM.ecore" nsPrefix="MARTEEvaluationProfile.HLAM">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AaXSBroXEequZOhpqc8FFw" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_SCIxsLmuEeqDC7PSdOYTIA"/>
+      </eSubpackages>
+      <eSubpackages xmi:type="ecore:EPackage" xmi:id="_AaXSB7oXEequZOhpqc8FFw" name="GRM" nsURI="http:///MARTEEvaluationProfile/GRM.ecore" nsPrefix="MARTEEvaluationProfile.GRM">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AaXSCLoXEequZOhpqc8FFw" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_xxlrYLnBEeqDC7PSdOYTIA"/>
+      </eSubpackages>
+      <eSubpackages xmi:type="ecore:EPackage" xmi:id="_AaXSCboXEequZOhpqc8FFw" name="GCM" nsURI="http:///MARTEEvaluationProfile/GCM.ecore" nsPrefix="MARTEEvaluationProfile.GCM">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AaXSCroXEequZOhpqc8FFw" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_vWY0cLnmEeqDC7PSdOYTIA"/>
+      </eSubpackages>
+      <eSubpackages xmi:type="ecore:EPackage" xmi:id="_AaXSC7oXEequZOhpqc8FFw" name="Time" nsURI="http:///MARTEEvaluationProfile/Time.ecore" nsPrefix="MARTEEvaluationProfile.Time">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AaXSDLoXEequZOhpqc8FFw" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_BLAsoLnnEeqDC7PSdOYTIA"/>
+      </eSubpackages>
+      <eSubpackages xmi:type="ecore:EPackage" xmi:id="_AaXSDboXEequZOhpqc8FFw" name="Alloc" nsURI="http:///MARTEEvaluationProfile/Alloc.ecore" nsPrefix="MARTEEvaluationProfile.Alloc">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AaXSDroXEequZOhpqc8FFw" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_DlVIELnpEeqDC7PSdOYTIA"/>
+      </eSubpackages>
+    </contents>
     <contents xmi:type="ecore:EPackage" xmi:id="_NLKZ4bnpEeqDC7PSdOYTIA" name="MARTEEvaluationProfile" nsURI="http:///schemas/MARTEEvaluationProfile/_NLKZ4LnpEeqDC7PSdOYTIA/11" nsPrefix="MARTEEvaluationProfile">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NLKZ4rnpEeqDC7PSdOYTIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NLKZ47npEeqDC7PSdOYTIA" key="originalName" value="MARTE-Evaluation-Profile"/>
