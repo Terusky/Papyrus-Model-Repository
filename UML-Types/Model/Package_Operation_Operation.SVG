@@ -176,7 +176,7 @@
                 <path d="M79 398 L94 398 L94 415 L79 415 L79 398 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath53">
-                <path d="M309 398 L327 398 L327 412 L309 412 L309 398 Z"/>
+                <path d="M301 399 L320 399 L320 412 L301 412 L301 399 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath54">
                 <path d="M506 398 L521 398 L521 415 L506 415 L506 398 Z"/>
@@ -242,9 +242,9 @@
         <g stroke-linecap="butt" fill="white" text-rendering="optimizeLegibility" font-family="'Segoe UI'" stroke="white" stroke-width="1.1">
             <polygon clip-path="url(#clipPath52)" points=" 80 410 86 399 92 413" stroke="none"/>
             <polygon fill="none" clip-path="url(#clipPath52)" points=" 80 410 86 399 92 413" stroke="black"/>
-            <line clip-path="url(#clipPath51)" fill="none" x1="310" x2="319" y1="351" y2="410" stroke="black"/>
-            <polygon clip-path="url(#clipPath53)" points=" 319 410 310 401 325 399" stroke="none"/>
-            <polygon fill="none" clip-path="url(#clipPath53)" points=" 319 410 310 401 325 399" stroke="black"/>
+            <line clip-path="url(#clipPath51)" fill="none" x1="310" x2="310" y1="351" y2="410" stroke="black"/>
+            <polygon clip-path="url(#clipPath53)" points=" 310 410 302 400 318 400" stroke="none"/>
+            <polygon fill="none" clip-path="url(#clipPath53)" points=" 310 410 302 400 318 400" stroke="black"/>
             <line clip-path="url(#clipPath51)" fill="none" x1="390" x2="519" y1="351" y2="410" stroke="black"/>
             <polygon clip-path="url(#clipPath54)" points=" 519 410 507 413 513 399" stroke="none"/>
             <polygon fill="none" clip-path="url(#clipPath54)" points=" 519 410 507 413 513 399" stroke="black"/>
