@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Symbols="http://PapyrusInternal/schemas/Symbols/_eij2kEBcEeKj6r7ThQagKA/2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://PapyrusInternal/schemas/Symbols/_eij2kEBcEeKj6r7ThQagKA/2 pathmap://PAPYRUS_INTERNAL_PROFILES/PapyrusInternal.profile.uml#_eikdoEBcEeKj6r7ThQagKA">
+  <uml:Model xmi:id="_SRy40MJ2EeqQM-F24R0kQQ" name="UML-Model-Symbol">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_SsDL4MJ2EeqQM-F24R0kQQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wxDbIMJ3EeqQM-F24R0kQQ" name="CPU"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_qihcUMJ3EeqQM-F24R0kQQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qi2zgMJ3EeqQM-F24R0kQQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qi2zgcJ3EeqQM-F24R0kQQ" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qi2zgsJ3EeqQM-F24R0kQQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qi2zg8J3EeqQM-F24R0kQQ" key="Copyright" value="CEA LIST - Initial API and Implementation&#xD;&#xA;"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qi2zhMJ3EeqQM-F24R0kQQ" key="Date" value="2012-12-07"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qi2zhcJ3EeqQM-F24R0kQQ" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qi0-UMJ3EeqQM-F24R0kQQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_INTERNAL_PROFILES/PapyrusInternal.profile.uml#_eijPgUBcEeKj6r7ThQagKA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_INTERNAL_PROFILES/PapyrusInternal.profile.uml#_dL4lkPXAEeGSQON-DQ-5eg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_qi4BoMJ3EeqQM-F24R0kQQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qjdQcMJ3EeqQM-F24R0kQQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qjdQccJ3EeqQM-F24R0kQQ" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qjdQcsJ3EeqQM-F24R0kQQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qjdQc8J3EeqQM-F24R0kQQ" key="Copyright" value="CEA LIST - Initial API and Implementation&#xD;&#xA;"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qjdQdMJ3EeqQM-F24R0kQQ" key="Date" value="2012-12-07"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qjdQdcJ3EeqQM-F24R0kQQ" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qi7E8MJ3EeqQM-F24R0kQQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_INTERNAL_PROFILES/PapyrusInternal.profile.uml#_eikdoEBcEeKj6r7ThQagKA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_INTERNAL_PROFILES/PapyrusInternal.profile.uml#_16oYAD-SEeKj6r7ThQagKA"/>
+    </profileApplication>
+  </uml:Model>
+  <Symbols:TypeSymbolDefinition xmi:id="_A9zWkMJ4EeqQM-F24R0kQQ" base_Type="_wxDbIMJ3EeqQM-F24R0kQQ" symbolPath="platform:/resource/UML-Model-Symbol/Images/ClipartKey_CPU.png"/>
+</xmi:XMI>
