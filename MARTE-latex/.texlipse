@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Tue Aug 04 05:48:41 JST 2020
+outputDir=
+markDer=true
+mainTexFile=MARTE.tex
+bibrefDir=
+builderNum=8
+outputFile=MARTE.pdf
+makeIndSty=
+srcDir=
+markTmpDer=true
+tempDir=tmp
+outputFormat=pdf
+langSpell=ja

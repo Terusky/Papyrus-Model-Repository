@@ -1,0 +1,113 @@
+\section{準拠}	%Conformance}
+
+\subsection{概要}	%Overview}
+
+% The range of applications and areas of knowledge that are inside the scope of this specification is largely broader than the
+% current usage of traditional tools in the real-time and embedded systems market. 
+% Though all of them are related from the system perspective and will benefit from having a common place for notations, vocabulary, and semantics inside MARTE, it is a fact that a number of different specialized actors are involved. 
+% Consequently, the tools that are currently in the market, which are those expected to evolve to support this specification, have different users and specific target applications sub-domains. 
+% For this reason, and in order to ease its adoption process, this specification defines a modular approach for conformance. 
+% This is similar to the UML compliance strategy, but in this case the compliance points are not defined as stratified horizontal layers. 
+% Here they are defined as Compliance Cases, whose constitutions depend closely on the expected use cases of the specification. 
+% Though it is recognized that the ability to exchange models between tools is extremely important, this is not compromised in this approach since interchange is only deemed useful between tools for similar and/or complementary purposes. 
+% When such purposes are similar, the exchanging tools will likely satisfy the same conformance cases. 
+% If they are complementary, model transformations and/or a broader scope of compliance cases will be required at least in one of the tools involved.
+
+この仕様の範囲内にあるアプリケーションの範囲と知識の領域は、
+リアルタイムおよび組み込みシステム市場における従来のツールの現在の使用状況。
+それらのすべてはシステムの観点から関連しており、MARTE内の表記法、語彙、およびセマンティクスの共通の場所を持つことから利益を得ますが、多くの異なる専門の俳優が関与しているのは事実です。
+その結果、現在市場に出ているツールは、この仕様をサポートするために進化すると期待されており、さまざまなユーザーと特定のターゲットアプリケーションサブドメインを持っています。
+このため、その採用プロセスを容易にするために、この仕様では、適合のためのモジュール式のアプローチを定義しています。
+これはUMLコンプライアンス戦略に似ていますが、この場合、コンプライアンスポイントは階層化された水平レイヤーとして定義されていません。
+ここでそれらはコンプライアンスケースとして定義され、その構成は仕様の予想されるユースケースに密接に依存します。
+ツール間でモデルを交換する機能は非常に重要であることが認識されていますが、交換は同様の目的および/または補完的な目的のためにツール間でのみ有用であると見なされるため、このアプローチではこれは危険にさらされません。
+そのような目的が類似している場合、交換ツールはおそらく同じ適合ケースを満たします。
+それらが補完的である場合、少なくとも関連するツールの1つで、モデル変換および/またはより広い範囲のコンプライアンスケースが必要になります。
+
+\subsection{Extension Units and Features}
+
+In order to properly identify the elements of MARTE that will be required in each compliance case, the following
+definition is made:
+EXTENSION UNITS: These are the concrete separated UML profiles or Model Libraries in which the language
+extensions that MARTE proposes are packaged. Some of them may require others to be complete or meaningful.
+Extension Units play the role of language units and/or individual meta-model packages as they are used in the
+definition of conformance in UML.
+The Extension Units defined in this specification are listed in the following table.
+
+Table 2.1 - Extension Units Defined
+Acronym Name, description Clause
+Sub clause
+NFP Non-Functional Properties Clause 8
+Time Enhanced Time Modeling Clause 9
+GRM Generic Resource Modeling Clause 10
+Alloc Allocation Modeling Clause 11
+GCM Generic Component Model Clause 12
+HLAM High-Level Application Modeling Clause 13
+SRM Software Resource Modeling Sub clause 14.1
+HRM Hardware Resource Modeling Sub clause 14.2
+RTM Real-Time objects Modeling (RTE MoCC) Clause 13
+GQAM Generic quantitative Analysis Modeling Clause 15
+SAM Schedulability Analysis Modeling Clause 16
+PAM Performance Analysis Modeling Clause 17
+VSL Value Specification Language Annex B
+CHF Clock Handling Facilities Annex C
+RSM Repetitive Structure Modeling Annex E
+
+\subsection{Conformance of MARTE with UML}
+
+% For many of the extension units considered, the Level 2 of conformance with UML may be sufficient. Though there are some extensions for which several language units in Level 3 of conformance with UML are necessary, in particular Templates.
+
+検討される拡張ユニットの多くでは、UMLへの準拠のレベル2で十分な場合があります。 UMLに準拠するレベル3のいくつかの言語単位が必要な拡張機能がいくつかありますが、特にテンプレートです。
+
+\subsection{Conformance with MARTE}
+
+Tools vendors and MARTE implementers require a set of conformance definitions that allow them to better target their
+particular user needs without having to implement the complete MARTE Specification.
+The target usages of the profile (its use cases and/or the actors involved) are good conceptual entities to look for groups
+of Extension Units that may lead to useful compliance definitions.
+
+\subsubsection{Compliance Cases}
+
+Considering the Use cases of this specification, (described in Clause 6), the compliance cases defined are:
+% • Software Modeling
+% • Constructs for modeling real-time and embedded (RTE) software applications and its non functional properties (NFP).
+% • Hardware Modeling
+% • Constructs for modeling the high level hardware aspects of RTE systems, including its NFP.
+% • System Architecting
+% • It includes both Software Modeling and Hardware Modeling compliance cases mentioned before, plus the allocation extension units.
+% • Performance Analysis
+% • It includes the extension units necessary to address the performance evaluation of RTES.
+% • Schedulability Analysis
+% • It includes the extension units necessary to address the schedulability analysis of RTES.
+% • Infrastructure Provider
+% • It includes the extension units necessary to address the definition and/or usage of platform specific services (like OS services for example). This may be used to create RTOS services model libraries, as well as to specify the services required to a platform in order to support higher level RT design methodologies.
+% • Methodologist
+% • Tools conforming to this compliance case are expected to support all the extension units required for the other compliance cases, which in practice means to support all the mandatory features of MARTE.
+
+
+•ソフトウェアモデリング
+•リアルタイムおよび組み込み（RTE）ソフトウェアアプリケーションとその非機能プロパティ（NFP）をモデリングするための構成。
+•ハードウェアモデリング
+•NFPを含む、RTEシステムの高レベルのハードウェア側面をモデル化するための構成。
+•システム設計
+•これには、前述のソフトウェアモデリングとハードウェアモデリングの両方のコンプライアンスケースと、割り当て拡張ユニットが含まれます。
+• パフォーマンス分析
+•RTESのパフォーマンス評価に対処するために必要な拡張ユニットが含まれています。
+•スケジュール可能性分析
+•RTESのスケジュール可能性分析に対処するために必要な拡張ユニットが含まれています。
+•インフラストラクチャプロバイダー
+•プラットフォーム固有のサービス（OSサービスなど）の定義や使用に対処するために必要な拡張ユニットが含まれています。これを使用して、RTOSサービスモデルライブラリを作成したり、より高いレベルのRT設計手法をサポートするためにプラットフォームに必要なサービスを指定したりできます。
+•方法論者
+•このコンプライアンスケースに準拠するツールは、他のコンプライアンスケースに必要なすべての拡張ユニットをサポートすることが期待されます。これは、実際にはMARTEのすべての必須機能をサポートすることを意味します。
+
+In order to manage complexity and speed up the adoption process, Compliance Cases are defined at two compliance
+levels: Base and Full. Each level indicates a concrete set of extension units that are considered as mandatory at that level.
+The Base level is defined as a subset of the Full level. Extension units that are included in the Full level, but are not in
+the Base level, are considered as optional at the Base level.
+
+2.4.2 Extension Units in each Compliance Case
+The Extension Units that must be supported in each Compliance Cases are assigned as depicted in the next table:
+
+2.4.3 Special additional compliance case and extension units
+Tools that wish to serve AADL users should implement A.3 in Annex A of this specification.
+

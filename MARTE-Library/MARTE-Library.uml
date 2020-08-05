@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_OF_BoLvREeqMxPA7Tj4vew" name="MARTE-Library">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_Oo8kwLvREeqMxPA7Tj4vew">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_ToMF8LvREeqMxPA7Tj4vew">
+    <importedPackage xmi:type="uml:Package" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_uBlQkA73EdyML4mHwjNDrw"/>
+  </packageImport>
+</uml:Model>

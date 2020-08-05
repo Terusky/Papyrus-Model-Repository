@@ -1,0 +1,674 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+\documentclass[a4paper,11pt]{ltjsarticle}
+
+\usepackage[margin=1.5cm]{geometry}
+\usepackage[deluxe,bold]{luatexja-preset}
+
+\title{13 Common Behavior}
+
+\begin{document}
+\maketitle
+
+
+\section*{13.1 Summary}
+
+This clause specifies the core concepts underlying all behavioral modeling in UML. 
+Structural models of Classifiers in UML define the allowable instances that may exist at any point in time, what values their StructuralFeatures may have and how those instances may be related to each other. 
+Behavioral modeling, on the other hand, models how these instances may change over time.
+
+この節では、UMLのすべての動作モデリングの基礎となるコアコンセプトを指定します。
+UMLの分類子の構造モデルは、任意の時点で存在する可能性のあるインスタンス、それらのStructuralFeatureが持つ可能性のある値、およびそれらのインスタンスが相互にどのように関連付けられるかを定義します。
+一方、行動モデリングは、これらのインスタンスが時間とともにどのように変化するかをモデル化します。
+
+UML provides Behavior, Event, and Trigger constructs to model the corresponding fundamental concepts of behavioral modeling.
+
+UMLは、対応する動作モデリングの基本的な概念をモデル化するためのBehavior、Event、およびTrigger構成を提供します。
+
+Behavior is the basic concept for modeling dynamic change. 
+Behavior may be executed, either by direct invocation or through the creation of an active object that hosts the behavior. 
+Behavior may also be emergent, resulting from the interaction of one or more participant objects that are themselves carrying out their own individual behaviors.
+Dynamic behavior results in events of interest that occur at specific points in time. 
+Such events may be implicit, occurring on the change of some value or the passage of some interval of time. 
+They may also be explicit, occurring when an operation is called or an asynchronous signal is received.
+
+
+動作は、動的な変化をモデル化するための基本的な概念です。
+動作は、直接呼び出しによって、または動作をホストするアクティブなオブジェクトの作成を通じて実行できます。
+行動は、それ自体が個々の行動を実行している1つ以上の参加者オブジェクトの相互作用の結果として発生する場合もあります。
+動的な動作は、特定の時点で発生する重要なイベントをもたらします。
+このようなイベントは暗黙的なもので、ある値の変化またはある時間間隔の経過で発生します。
+これらは明示的である場合もあり、操作が呼び出されたとき、または非同期信号が受信されたときに発生します。
+
+The occurrence of an event may then trigger new behavior, or change the course of already executing behavior. 
+Explicit events thus provide the basic mechanism for communication between behaviors, in which an action carried out in one behavior, such as calling an operation or sending a signal, can trigger a response in another behavior.
+The remainder of this clause further details the fundamental UML modeling mechanisms of Behaviors, Events and Triggers. 
+These mechanisms then provide the framework for the specification in the following clauses of various complete UML behavioral modeling constructs.
+
+
+イベントの発生により、新しい動作がトリガーされるか、すでに実行されている動作のコースが変更される場合があります。
+したがって、明示的なイベントは、動作間の通信の基本的なメカニズムを提供します。動作の呼び出しやシグナルの送信など、1つの動作で実行されるアクションは、別の動作で応答をトリガーできます。
+この節の残りの部分では、動作、イベント、およびトリガーの基本的なUMLモデリングメカニズムについて詳しく説明します。
+これらのメカニズムは、さまざまな完全なUML動作モデリング構成の以下の節で仕様のフレームワークを提供します。
+
+
+\section*{13.2 Behaviors}
+
+\subsection*{13.2.1 Summary}
+
+This sub clause introduces the framework for modeling behavior in UML. The concrete subtypes of Behavior, described in subsequent clauses, then provide different mechanisms to specify behaviors.
+
+このサブ句は、UMLでの動作をモデル化するためのフレームワークを紹介します。 その後の節で説明する動作の具体的なサブタイプは、動作を指定するためのさまざまなメカニズムを提供します。
+
+A variety of behavioral specification mechanisms are supported by UML, including:
+
+UMLは、次のようなさまざまな動作仕様メカニズムをサポートしています:
+
+ StateMachines that model finite automata (see Clause 14)
+ Activities defined using Petri-net-like graphs (see Clause 15)
+ Interactions that model partially-ordered sequences of event occurrences (see Clause 17).
+
+\begin{itemize}
+  \item 有限オートマトンをモデル化するStateMachines（14節を参照）
+  \item ペトリネットのようなグラフを使用して定義されたアクティビティ（15節を参照）
+  \item イベント発生の部分的に順序付けられたシーケンスをモデル化する相互作用（17節を参照）。
+\end{itemize}
+
+
+These behavioral specification mechanisms differ in their expressive power and domain of applicability. 
+This means that not all behaviors can be described by each of the mechanisms. 
+Nevertheless, many behaviors can be described by one or more of the mechanisms, in which case the choice of mechanism is one of convenience, or, alternatively, multiple mechanisms can be used to provide different models of the same behavior.
+
+これらの動作仕様メカニズムは、表現力と適用範囲が異なります。
+つまり、すべての動作を各メカニズムで説明できるわけではありません。
+それでも、多くの動作は1つ以上のメカニズムで記述できます。その場合、メカニズムの選択は便利なものの1つです。あるいは、複数のメカニズムを使用して、同じ動作の異なるモデルを提供することもできます。
+
+
+\subsection*{13.2.2 Abstract Syntax}
+
+\subsection*{13.2.3 Semantics}
+
+\subsubsection*{13.2.3.1 Behaviors}
+
+A Behavior is a specification of events that may occur dynamically over time (see also sub clause 13.3 on the explicit modeling of Events in UML). 
+This specification may be prescriptive of specifically what events may occur in what situations, descriptive of emergent behavior or illustrative of possible sequences of event occurrences. 
+Every Behavior defines at least one event, the event of its invocation. 
+A Behavior may be invoked directly, via a BehavioralFeature that it implements as a method or as the classifierBehavior of a BehavioredClassifier.
+
+動作は、時間の経過とともに動的に発生する可能性のあるイベントの仕様です（UMLでのイベントの明示的なモデリングに関する13.3節も参照）。
+この仕様は、どのような状況でどのようなイベントが発生するかを具体的に説明し、緊急の動作を説明したり、イベント発生の可能なシーケンスを示したりします。
+すべての動作は、少なくとも1つのイベント、つまりその呼び出しのイベントを定義します。
+Behaviorは、メソッドまたはBehavioredClassifierのclassifierBehaviorとして実装されるBehavioralFeatureを介して直接呼び出すことができます。
+
+On each invocation, the subsequent actual sequence of event occurrences due to the invocation, consistent with the specification of the Behavior, is called an execution trace for the Behavior. 
+An execution trace always begins with the invocation of the Behavior and may continue indefinitely (if the Behavior does not terminate), or it may end in the occurrence of a termination event for the Behavior, in which case the execution of the Behavior is said to have completed. 
+A Behavior may either complete normally, or it may complete as a result of the raising of an exception, in which case, if the Behavior was invoked synchronously (see below), the exception is propagated to the caller (see also the discussion of exceptions in sub clause 15.5.3). 
+Event occurrences during an execution trace include both occurrences caused by the Behavior, such as attribute value changes, creation and destruction of objects and invocation of other Behaviors, and occurrences that trigger responses within the Behavior, such as the changing of a monitored value or the receipt of a Signal instance.
+
+各呼び出しで、動作による仕様に一致する、呼び出しによる後続の実際のイベント発生シーケンスは、動作の実行トレースと呼ばれます。
+実行トレースは常に動作の呼び出しで始まり、無期限に継続する場合があります（動作が終了しない場合）、または動作の終了イベントの発生で終了する場合があります。この場合、動作の実行は完了しました。
+動作は正常に完了する場合と、例外が発生した結果として完了する場合があります。その場合、動作が同期的に呼び出された場合（以下を参照）、例外は呼び出し元に伝達されます（例外の説明も参照） 15.5.3項）。
+実行トレース中のイベントの発生には、属性値の変更、オブジェクトの作成と破棄、その他の動作の呼び出しなどの動作による発生と、監視値の変更や動作などの動作内で応答をトリガーする発生の両方が含まれますSignalインスタンスの受信。
+
+Behaviors in UML are kinds of Classes, which means that they may be instantiated as objects. 
+An object that is an instance of a Behavior is known as a behavior execution. Invoking the Behavior corresponds to instantiating the Behavior, and there is a specific execution trace corresponding to each Behavior execution.
+
+UMLの動作はクラスの一種です。つまり、オブジェクトとしてインスタンス化される可能性があります。
+動作のインスタンスであるオブジェクトは、動作実行と呼ばれます。ビヘイビアーの呼び出しは、ビヘイビアーのインスタンス化に対応し、各ビヘイビアーの実行に対応する特定の実行トレースがあります。
+
+Since a Behavior is a Class, it may be specialized and may also itself own StructuralFeatures and BehavioralFeatures.
+These features may be referenced in the specification of the Behavior. 
+An execution of the Behavior may then access these features, such as reading and modifying attributes of the Behavior. 
+Public features of a Behavior may also be referenced from outside of the Behavior, as usual for the features of any Class.
+
+Behaviorはクラスであるため、特殊化されている場合があり、それ自体がStructuralFeaturesとBehavioralFeaturesを所有している場合もあります。
+これらの機能は、動作の仕様で参照できます。
+ビヘイビアーの実行により、ビヘイビアーの属性の読み取りや変更など、これらの機能にアクセスできます。
+ビヘイビアーのパブリック機能は、通常のクラスの機能と同様に、ビヘイビアーの外部からも参照できます。
+
+A Behavior may be invoked many times. 
+A reentrant Behavior (i.e., one with its isReentrant property equal to true) may be invoked again before a previous invocation has completed (this is the default). 
+On the other hand, a non-reentrant Behavior (i.e, one with its isReentrant property equal to false) shall not be invoked again if a previous invocation has not completed. 
+A reentrant Behavior may have many ongoing executions at any one time, but a non-reentrant Behavior shall have at most one uncompleted execution at any time. 
+If an invoking Behavior attempts to invoke a non-reentrant Behavior that already has an uncompleted execution, then the invoker shall block until the existing execution completes (or indefinitely, if the execution never completes).
+
+
+動作は何度も呼び出される可能性があります。
+再入可能な動作（つまり、isReentrantプロパティがtrueの動作）は、前の呼び出しが完了する前に再度呼び出されることがあります（これがデフォルトです）。
+一方、前の呼び出しが完了していない場合、再入不可の動作（つまり、isReentrantプロパティがfalseになっている動作）は再度呼び出されません。
+再入可能な動作は常に多くの実行中の実行を持つことができますが、非再入可能な動作は常に最大1つの未完了の実行を持つ必要があります。
+呼び出し動作が、まだ完了していない実行を含む再入不可の動作を呼び出そうとする場合、呼び出し元は、既存の実行が完了するまで（または、実行が完了しない場合は無期限に）ブロックします。
+
+A Behavior may be invoked synchronously or asynchronously. 
+Synchronous invocation means that an invoking Behavior retains a reference to the invoked Behavior execution and waits for the execution to complete. Asynchronous invocation, on the other hand, means that the invoked Behavior execution proceeds concurrently with the invoking Behavior.
+
+動作は同期的または非同期的に呼び出されます。
+同期呼び出しとは、呼び出し動作が呼び出された動作の実行への参照を保持し、実行が完了するまで待機することを意味します。一方、非同期呼び出しは、呼び出された動作の実行が、呼び出し動作と同時に進行することを意味します。
+
+The preconditions for a Behavior define conditions that shall be true when the Behavior is invoked. 
+These preconditions may be assumed in the detailed specification of the Behavior. 
+The semantics of an invocation of a Behavior when a precondition is not satisfied are intentionally undefined.
+The postconditions for a Behavior define conditions that will be true when the invocation of the Behavior completes successfully, assuming the preconditions were satisfied. 
+These postconditions shall be satisfied in the detailed specification of the Behavior.
+
+
+動作の前提条件は、動作が呼び出されたときに真になる条件を定義します。
+これらの前提条件は、動作の詳細仕様で想定されている場合があります。
+前提条件が満たされない場合の動作の呼び出しのセマンティクスは、意図的に未定義です。
+動作の事後条件は、動作条件の呼び出しが正常に完了したときに真になる条件を定義します。
+これらの事後条件は、動作の詳細仕様で満たされるものとします。
+
+
+\subsubsection*{13.2.3.2 Behavior Parameters}
+
+A Behavior may have Parameters (see sub clause 9.4) that provide the ability to pass values into and out of Behavior executions.
+
+ビヘイビアーには、ビヘイビアーの実行に値を渡したり、ビヘイビアーの実行から値を渡したりする機能を提供するパラメーターがあります（9.4節を参照）。
+
+When a Behavior is invoked, argument values may be provided corresponding to Parameters with direction “in” or“inout”, as constrained by the multiplicity of those Parameters. 
+If such an input Parameter has a defaultValue, and no explicit argument value is given for it, then the defaultValue is evaluated to provide argument values for the Parameter (even if the Parameter has a multiplicity lower bound of 0, so having no value would be valid for it). Argument values are available to affect the course of the invoked Behavior execution.
+
+Behaviorが呼び出されると、引数の値が、「in」または「inout」の方向を持つパラメーターに対応して提供される場合があります。
+このような入力パラメーターにdefaultValueがあり、明示的な引数値が指定されていない場合、defaultValueが評価されてパラメーターの引数値が提供されます（パラメーターの多重度の下限が0であっても、値がないため、 有効です）。 引数の値は、呼び出された動作の実行の過程に影響を与えるために使用できます。
+
+
+When a Behavior execution completes, it may produce result values corresponding to Parameters with direction “inout,”“out,” and “return,” as constrained by the multiplicity of those Parameters. 
+If such an output Parameter has a defaultValue, and no explicit result value is given for it, then the defaultValue is evaluated to provide result values for the Parameter (even if the Parameter has a multiplicity lower bound of 0, so having no value would be valid for it). 
+If the Behavior was invoked synchronously, then result values are returned to the invoker. 
+However, if the Behavior was invoked asynchronously, then any result values are lost when the Behavior execution completes.
+
+ビヘイビアーの実行が完了すると、パラメーターに対応する結果値が生成されます。これらのパラメーターは、パラメーターの多様性によって制約されているため、方向が「inout」、「out」、および「return」です。
+そのような出力パラメーターにdefaultValueがあり、明示的な結果値が指定されていない場合、defaultValueが評価されてパラメーターの結果値が提供されます（パラメーターの多重度の下限が0であるため、値がないため、 有効です）。
+Behaviorが同期的に呼び出された場合、結果の値は呼び出し元に返されます。
+ただし、動作が非同期で呼び出された場合、動作の実行が完了すると、結果値は失われます。
+
+Parameters may also be marked as streaming (i.e., have the isStreaming property be true). 
+Such Parameters allow values to be passed into and out of a Behavior execution any time during its course, rather than just on invocation and completion.
+
+パラメータをストリーミングとしてマークすることもできます（つまり、isStreamingプロパティをtrueにします）。
+このようなパラメーターを使用すると、呼び出しと完了時だけでなく、コースの実行中にいつでも動作実行に値を渡したり、実行したりすることができます。
+
+If an input Parameter is streaming, then argument values may be provided for the Parameter during the course of a Behavior execution rather than just at invocation. 
+One or more argument values may be posted to a streaming input Parameter at or any time after the invocation of a Behavior and before its completion. 
+These argument values are then available to affect the further course of the Behavior execution from that time forward.
+
+入力パラメーターがストリーミングの場合、引数の値は、呼び出し時だけでなく、動作の実行中にパラメーターに提供される場合があります。
+Behaviorの呼び出し後、またはその完了前に、1つ以上の引数値をストリーミング入力パラメーターにポストできます。 
+これらの引数値は、その時点からの動作実行のさらなるコースに影響を与えるために使用できます。
+
+If an output Parameter is streaming, then a Behavior execution may provide result values for the Parameter during its course rather than just at completion. 
+One or more result values may be posted to a streaming output Parameter any time after the invocation of a Behavior up to or at its completion. 
+These result values are then available to affect the further course of the execution of the invoking Behavior from that time forward.
+
+出力パラメーターがストリーミングの場合、ビヘイビアーの実行は、完了時だけでなく、そのコース中にパラメーターの結果値を提供する場合があります。
+Behaviorの呼び出し後、その完了まで、または完了時に、1つ以上の結果値をストリーミング出力パラメーターにポストできます。
+これらの結果値は、その時点以降の呼び出し動作の実行のさらなるコースに影響を与えるために使用できます。
+
+NOTE. In order for an invoker to be able to obtain posted values from streaming output Parameters, the invoked Behavior has to be invoked synchronously, even though streamed outputs could potentially trigger asynchronous responses in the invoker. 
+(See sub clause 16.3.3 on the semantics of CallActions in the case of streaming Parameters, including the effect of the multiplicity of such Parameters.)
+
+注意。 ストリーミング出力がインボーカーで非同期応答をトリガーする可能性がある場合でも、インボーカーがストリーミング出力パラメーターからポストされた値を取得できるようにするには、呼び出されたビヘイビアーを同期的に呼び出す必要があります。
+（ストリーミングパラメーターの場合のCallActionsのセマンティクスについては、サブパラメーター16.3.3を参照してください。パラメーターの多重度の影響も含まれます。）
+
+A reentrant Behavior shall not have streaming Parameters, because there are potentially multiple executions of the Behavior going at the same time, and it would be ambiguous which execution would be receiving or producing streamed values.
+
+同時に実行される動作の複数の実行が潜在的にあり、どの実行がストリーミングされた値を受信または生成するかが不明確になるため、再入可能な動作にはストリーミングパラメータがありません。
+
+A Behavior may have one or more output Parameters marked as isException=true. 
+In this case, when an execution of the Behavior completes, either none of these Parameters shall have values or exactly one shall have a value and no other parameters (exception or otherwise) shall have any values.
+
+動作には、isException = trueとマークされた1つ以上の出力パラメーターがある場合があります。
+この場合、動作の実行が完了すると、これらのパラメーターのいずれも値を持たないか、正確に1つだけが値を持ち、他のパラメーター（例外またはその他）に値がありません。
+
+NOTE. Returning a value in an exception Parameter is not considered to be “raising an exception” in the sense described in sub clause 15.5.3.
+
+注意。 例外で値を返すパラメータは、15.5.3節で説明されている意味で「例外の発生」とは見なされません。
+
+A Behavior with input ParameterSets can only accept inputs from Parameters in one of the sets per execution. 
+A Behavior with output ParameterSets can only post outputs to the Parameters in one of the sets per execution. 
+The semantics of conditions of input and output ParameterSets are the same as Behavior preconditions and postconditions, respectively, but apply only to the set of Parameters specified.
+
+入力ParameterSetの動作は、実行ごとに1つのセットのパラメーターからの入力のみを受け入れることができます。
+出力ParameterSetの動作は、実行ごとに1つのセットのパラメーターにのみ出力をポストできます。
+入力および出力ParameterSetの条件のセマンティクスは、それぞれ振る舞いの前提条件および事後条件と同じですが、指定された一連のパラメーターにのみ適用されます。
+
+\subsubsection*{13.2.3.3 Opaque and Function Behaviors}
+
+An OpaqueBehavior is a Behavior whose specification is given in a textual language other than UML.
+
+OpaqueBehaviorは、UML以外のテキスト言語で仕様が指定されている動作です。
+
+An OpaqueBehavior has a body that consists of a sequence of text Strings representing alternative means of specifying the required behavior. 
+A corresponding sequence of language Strings may be used to specify the languages in which each of the body Strings is to be interpreted. 
+Languages are matched to body Strings by order. 
+The UML specification does not define how body Strings are interpreted relative to any language, though other specifications may define specific language Strings to be used to indicate interpretation with respect to those specifications (e.g., “OCL” for expressions to be interpreted according to the OCL specification).
+
+OpaqueBehaviorには、必要な動作を指定する代替手段を表す一連のテキスト文字列で構成されるボディがあります。
+対応する言語ストリングのシーケンスを使用して、各本体ストリングを解釈する言語を指定できます。
+言語は本文の文字列と順番に照合されます。
+UML仕様は、本体文字列がどの言語に対してどのように解釈されるかを定義していませんが、他の仕様は、それらの仕様に関する解釈を示すために使用される特定の言語文字列を定義する場合があります（例：OCLに従って解釈される式の「OCL」） 仕様）。
+
+NOTE. It is not required to specify the languages. 
+If they are unspecified, then the interpretation of any body Strings shall be determined implicitly from the form of the bodies or the context of use of the OpaqueBehavior.
+If an OpaqueBehavior has more than one body String, then any one of the bodies can be used to determine the behavior of the OpaqueBehavior. 
+The UML specification does not determine how this choice is made. 
+A FunctionBehavior is an OpaqueBehavior that does not access or modify any objects or other external data. 
+During the execution of a FunctionBehavior, no communication or interaction with anything external to the FunctionBehavior is allowed. 
+The amount of time to compute its results is undefined. 
+A FunctionBehavior may raise exceptions for certain input values, in which case the computation is abandoned.
+
+注意。 言語を指定する必要はありません。
+それらが指定されていない場合、ボディ文字列の解釈は、ボディの形式またはOpaqueBehaviorの使用のコンテキストから暗黙的に決定されます。
+OpaqueBehaviorに複数の本文文字列がある場合、いずれかの本文を使用してOpaqueBehaviorの動作を決定できます。
+UML仕様は、この選択がどのように行われるかを決定しません。
+FunctionBehaviorは、オブジェクトやその他の外部データにアクセスしたり変更したりしないOpaqueBehaviorです。
+FunctionBehaviorの実行中、FunctionBehaviorの外部との通信や相互作用は許可されません。
+結果を計算する時間は定義されていません。
+FunctionBehaviorは、特定の入力値に対して例外を発生させる場合があります。その場合、計算は中止されます。
+
+FunctionBehaviors thus represent functions that transform a set of input argument values (given by the input Parameters of the FunctionBehavior) to a set of output result values (given by the output Parameters of the FunctionBehavior). 
+The execution of a FunctionBehavior depends only on the argument values and has no other effect than to compute result values. 
+Examples of functions that might be modeled as FunctionBehaviors include primitive arithmetic, Boolean, and String functions.
+
+したがって、FunctionBehaviorsは、一連の入力引数値（FunctionBehaviorの入力パラメーターによって与えられる）を一連の出力結果値（FunctionBehaviorの出力パラメーターによって与えられる）に変換する関数を表します。
+FunctionBehaviorの実行は、引数値にのみ依存し、結果値を計算する以外の効果はありません。
+FunctionBehaviorsとしてモデル化できる関数の例には、プリミティブ算術、ブール、およびストリング関数が含まれます。
+
+\subsubsection*{13.2.3.4 Behaviored Classifiers}
+
+A BehavioredClassifier is a Classifier that may have ownedBehaviors, at most one of which may be considered to specify the behavior of the BehavioredClassifier itself. 
+Conversely, a Behavior that is the ownedBehavior of a BehavioredClassifier has that BehavioredClassifier as its context. 
+The specification of such a Behavior may reference features of the context BehavioredClassifier as well as any other elements visible to the context BehavioredClassifier.
+
+BehavioredClassifierは、ownedBehaviorsを持つ可能性のある分類子であり、最大で1つはBehavioredClassifier自体の動作を指定すると見なされます。
+逆に、BehavioredClassifierのownedBehaviorであるBehaviorは、そのBehavioredClassifierをコンテキストとして持っています。
+そのような動作の仕様は、コンテキストBehavioredClassifierの機能や、コンテキストBehavioredClassifierから見える他の要素を参照する場合があります。
+
+A Behavior that is not directly an ownedBehavior of a BehavioredClassifier may nevertheless still have a context. 
+To determine the context of a Behavior that is not directly an ownedBehavior, find the first BehavioredClassifier reached by following the chain of ownership relationships from the Behavior, if any. 
+If there is such a BehavioredClassifier, then it is the context, unless it is itself a Behavior with a non-empty context, in which case this is also the context for the original Behavior. 
+For example, the context of an entry Behavior (see sub clause 14.2) in a StateMachine owned by a BehavioredClassifier is the classifier that owns the StateMachine, not the StateMachine.
+
+BehavioredClassifierの直接のownBehaviorではないBehaviorにもかかわらず、それでもコンテキストがある場合があります。
+直接ownedBehaviorではないBehaviorのコンテキストを決定するには、Behaviorからの所有権関係のチェーンがあれば、そのチェーンをたどって到達した最初のBehavioredClassifierを見つけます。
+そのようなBehavioredClassifierが存在する場合、それ自体が空でないコンテキストを持つ動作でない限り、それはコンテキストです。その場合、これは元の動作のコンテキストでもあります。
+たとえば、BehavioredClassifierが所有するStateMachineのエントリBehavior（14.2節を参照）のコンテキストは、StateMachineではなくStateMachineを所有する分類子です。
+
+A Behavior that is owned directly by a Class as a nestedClassifier (see sub clause 11.4), rather than as an ownedBehavior, does not have the Class as its context. 
+The nestedClassifiers of a Class are simply nested in the Class considered as a Namespace. 
+As a nestedClassifier, a Behavior has visibility of elements defined within the owning Class and other elements visible to that Class, and it may itself be visible outside the Class, depending on its declared visibility. 
+But its semantics as a “stand-alone” Behavior are not otherwise affected by being nested in the Class.
+
+OwnedBehaviorとしてではなく、nestedClassifier（11.4節を参照）としてクラスによって直接所有される動作は、コンテキストとしてクラスを持ちません。
+クラスのnestedClassifiersは、名前空間と見なされるクラスに単純にネストされます。
+NestedClassifierとして、Behaviorは、所有するクラス内で定義された要素とそのクラスから見える他の要素の可視性を持ち、宣言された可視性によっては、それ自体がクラスの外に見える場合があります。
+ただし、「スタンドアロン」動作としてのそのセマンティクスは、クラスにネストされていることによる影響を受けません。
+
+If a Behavior has a context, then an execution of the Behavior always has an associated context object that is an instance of the context BehavioredClassifier (as long as that BehavioredClassifier is instantiable). 
+A Behavior without a context BehavioredClassifier may still be invoked as a “stand-alone” Behavior. 
+In this case, the Behavior execution serves as its own context object. The Behavior execution also serves as its own context object in the case that the context BehavioredClassifier is not instantiable, that is, if it is a Component with isIndirectlyInstantiated=true (see sub clause 11.6) or a Collaboration (see sub clause 11.7). 
+Thus, a Behavior execution always has a context object, whether or not the Behavior has an explicit, instantiable context BehavioredClassifier.
+
+Behaviorにコンテキストがある場合、Behaviorの実行には常に、そのBehavioredClassifierのインスタンスである関連付けられたコンテキストオブジェクトがあります（BehavioredClassifierがインスタンス化可能である限り）。
+コンテキストBehavioredClassifierのない動作でも、「スタンドアロン」の動作として呼び出すことができます。
+この場合、動作の実行は、独自のコンテキストオブジェクトとして機能します。 Behavior実行は、コンテキストBehavioredClassifierがインスタンス化できない場合、つまりisIndirectlyInstantiated = true（11.6節を参照）またはコラボレーション（11.7節を参照）を持つコンポーネントの場合、独自のコンテキストオブジェクトとしても機能します。
+したがって、Behaviorが明示的でインスタンス化可能なコンテキストBehavioredClassifierを持っているかどうかに関係なく、Behaviorの実行には常にコンテキストオブジェクトがあります。
+
+A BehavioredClassifier may have a distinguished ownedBehavior called its classifierBehavior. 
+A classifierBehavior describes the behavior an instance of the owning Classifier may undergo in the course of its lifetime. 
+The classifierBehavior of a BehavioredClassifier is considered to be invoked when an instance of the owning BehavioredClassifier is created and the resulting execution has the new instance as its context object. 
+The execution is terminated if the instance is destroyed.
+
+BehavioredClassifierには、そのclassifierBehaviorと呼ばれる区別されるownedBehaviorがある場合があります。
+classifierBehaviorは、所有するClassifierのインスタンスがその存続期間中に経験する可能性のある動作を記述します。
+BehavioredClassifierのclassifierBehaviorは、所有するBehavioredClassifierのインスタンスが作成され、結果の実行に新しいインスタンスがコンテキストオブジェクトとして含まれているときに呼び出されると見なされます。
+インスタンスが破棄されると、実行が終了します。
+
+The precise semantics of a classifierBehavior depend on the kind of BehavioredClassifier that owns it. 
+For example, the classifierBehavior of a Collaboration (see sub clause 11.7) represents emergent behavior of all the parts, whereas the classifierBehavior of a Class (see sub clause 11.4) is just the behavior of instances of the Class separated from the behaviors of any of its parts. 
+However, a passive Class (with isActive=false) shall not have a classifierBehavior.
+
+classifierBehaviorの正確なセマンティクスは、それを所有するBehavioredClassifierの種類によって異なります。
+たとえば、コラボレーションのclassifierBehavior（11.7節を参照）はすべてのパーツの緊急動作を表しますが、クラスのclassifierBehavior（11.4節を参照）はクラスのインスタンスの動作であり、 その部分。
+ただし、（isActive = falseを指定した）パッシブクラスにはclassifierBehaviorがあってはなりません。
+
+\subsubsection*{13.2.3.5 Behavioral Features and Methods}
+
+There are two kinds of BehavioralFeatures: Operations (see sub clause 9.6) and Receptions (see sub clause 10.3). 
+Of the different kinds of BehavioredClassifiers in UML, only Classes may have BehavioralFeatures and only active Classes may have Receptions (see sub clause 11.4). 
+Calling an Operation on or sending a Signal instance to an object of a Class is a request for the object to carry out an identified BehavioralFeature. 
+An Operation call identifies a specific operation to be invoked. 
+The receipt of an instance of a Signal, on the other hand, is considered to be a request for any Reception of the receiving object that references that Signal or any direct or indirect generalization of it.
+
+BehavioralFeatureには、操作（9.6節を参照）と受信（10.3節を参照）の2種類があります。
+UMLのさまざまな種類のBehavioredClassifiersの中で、クラスのみがBehavioralFeaturesを持つことができ、アクティブなクラスのみがレセプションを持つことができます（11.4節を参照）。
+クラスのオブジェクトにSignalインスタンスを送信したり、Signalインスタンスを送信したりすることは、オブジェクトが特定されたBehavioralFeatureを実行するためのリクエストです。
+Operation呼び出しは、呼び出される特定の操作を識別します。
+一方、シグナルのインスタンスの受信は、そのシグナルを参照する受信オブジェクトの受信またはその直接または間接の一般化の要求と見なされます。
+
+A BehavioralFeature of a Class may be implemented by one or more method Behaviors. 
+Such a BehavioralFeature specifies that instances of the owning Class will respond to a request for the BehavioralFeature by invoking one of the feature’s implementing methods. 
+A Behavior shall be the method for no more than one BehavioralFeature, called its specification. 
+The specification of a Behavior shall be an owned or inherited member of the Class of which the Behavior is an ownedBehavior. 
+It is possible to have more than one method associated with a single BehavioralFeature, but there shall be at most one Behavior for a particular pairing of a Class (as owner of the Behavior) and a BehavioralFeature (as the specification for the Behavior). 
+This means that a single BehavioralFeature may have methods both in its owning Class and any direct or indirect subclass of that Class, but with no more than one method per Class.
+
+クラスのBehavioralFeatureは、1つまたは複数のメソッドBehaviorsによって実装できます。
+このようなBehavioralFeatureは、所有するクラスのインスタンスが、機能の実装メソッドの1つを呼び出すことによってBehavioralFeatureのリクエストに応答することを指定します。
+Behaviorは、その仕様と呼ばれるBehavioralFeatureを1つだけ持つメソッドです。
+Behaviorの仕様は、BehaviorがそのBehaviorであるクラスの所有または継承されたメンバーでなければなりません。
+1つのBehavioralFeatureに複数のメソッドを関連付けることは可能ですが、（Behaviorの所有者としての）クラスとBehavioralFeature（Behaviorの仕様としての）の特定のペアに対して最大1つのBehaviorが存在する必要があります。
+つまり、1つのBehavioralFeatureは、その所有クラスとそのクラスの直接または間接サブクラスの両方にメソッドを持つことができますが、クラスごとにメソッドは1つだけです。
+
+The receiving object becomes the context object for the execution of any invoked methods.
+
+受信オブジェクトは、呼び出されたメソッドを実行するためのコンテキストオブジェクトになります。
+
+NOTE. Methods of a Reception are always invoked asynchronously, while the methods of an Operation may be invoked either synchronously or asynchronously, depending on how the Operation is called.
+
+注意。 受信のメソッドは常に非同期で呼び出されますが、操作のメソッドは、操作の呼び出し方法に応じて同期または非同期のいずれかで呼び出されます。
+
+
+The method resolution process shall be based on the BehavioralFeature being requested, the object receiving the request and any data values associated with the request (i.e., Operation input parameter values or Signal attribute values).
+However, the UML specification does not mandate that a conforming UML tool support any particular resolution process. 
+In general, the resolution process may be complicated, to include such mechanisms as before-after methods, delegation, etc. 
+In some of these variations, multiple Behaviors may be executed as a result of a single call. 
+If no methods are identified by the resolution process, then it is undefined what happens.
+
+メソッド解決プロセスは、要求されているBehavioralFeature、要求を受信するオブジェクト、および要求に関連付けられているデータ値（つまり、操作入力パラメーター値または信号属性値）に基づいています。
+ただし、UML仕様では、準拠するUMLツールが特定の解決プロセスをサポートすることを義務付けていません。
+一般に、解決プロセスは複雑になり、ビフォーアフターメソッド、委任などのメカニズムが含まれる場合があります。
+これらのバリエーションのいくつかでは、単一の呼び出しの結果として複数の動作が実行される場合があります。
+解決プロセスでメソッドが識別されない場合、何が起こるかは定義されていません。
+
+The following is a simple object-oriented resolution process for a CallEvent that always results in at most one method being identified:
+
+以下は、常に最大1つのメソッドが識別されるCallEventの単純なオブジェクト指向の解決プロセスです。
+
+If the Class of the receiving object owns a method for the Operation identified in the CallEvent, then that method is the result of the resolution. 
+Otherwise, the superclass of the Class of the receiving object is examined for a method for the Operation, and so on up the generalization hierarchy until a method is found or the root of the hierarchy is reached. 
+If a Class has multiple superclasses, then all of them are examined for a method. 
+If no method is found, or a method is found in more than one ancestor Class along different paths, then the model is ill-formed for this resolution process and it results in no method.
+
+受信オブジェクトのクラスがCallEventで識別される操作のメソッドを所有している場合、そのメソッドは解決の結果です。
+それ以外の場合は、受信オブジェクトのクラスのスーパークラスで操作のメソッドが調べられ、メソッドが見つかるか、階層のルートに到達するまで、汎化階層が上に向かって調べられます。
+クラスに複数のスーパークラスがある場合、それらのすべてがメソッドについて検査されます。
+メソッドが見つからない場合、またはメソッドが異なるパスに沿った複数の祖先クラスで見つかった場合、モデルはこの解決プロセスに対して不適切な形式であり、メソッドは作成されません。
+
+A method of an Operation shall have Parameters corresponding to the Parameters of the Operation. 
+Similarly, a method of a Reception shall have Parameters corresponding to the attributes of the Signal referenced by the Reception, which are considered as effective “in” Parameters of the Reception. 
+The data values associated with a request – input Operation parameter values or Signal attribute values – are then passed to a method invoked due to the request via the method parameters. 
+For a synchronous Operation call, output Parameter values from the method execution are also passed back to the Operation caller via the corresponding Operation output Parameters.
+
+オペレーションのメソッドには、オペレーションのパラメーターに対応するパラメーターが必要です。
+同様に、レセプションのメソッドは、レセプションによって参照されるシグナルの属性に対応するパラメーターを持たなければなりません。これらのパラメーターは、レセプションの有効な「入力」パラメーターと見なされます。
+リクエストに関連付けられたデータ値（入力操作パラメーター値またはシグナル属性値）は、メソッドパラメーターを介したリクエストによって呼び出されたメソッドに渡されます。
+同期操作呼び出しの場合、メソッド実行からの出力パラメーター値も、対応する操作出力パラメーターを介して操作呼び出し元に渡されます。
+
+However, no specific approach is defined for matching the Parameters of the method to the Parameters of the BehavioralFeature. 
+Possible approaches include exact match (i.e., the type of the corresponding Parameters, in order, must be the same), co-variant match (the type of a Parameter of the method may be a subtype of the type of the Parameter of the BehavioralFeature), contra-variant match (the type of a Parameter of the method may be a supertype of the type of the Parameter of the BehavioralFeature), or a combination thereof.
+
+ただし、メソッドのパラメーターをBehavioralFeatureのパラメーターに一致させるための特定のアプローチは定義されていません。
+可能なアプローチには、完全一致（つまり、対応するパラメーターのタイプが順番に同じでなければならない）、共変マッチ（メソッドのパラメーターのタイプがBehavioralFeatureのパラメーターのタイプのサブタイプである可能性がある）が含まれます。 ）、反変マッチ（メソッドのパラメーターのタイプはBehavioralFeatureのパラメーターのタイプのスーパータイプである場合があります）、またはそれらの組み合わせ。
+
+13.2.4 Notation
+
+The notation for various subclasses of Behavior are defined in subsequent clauses.
+The notation for Signals and Receptions is covered under Simple Classifiers in sub clause 10.3.4.
+The notation for active Classes is covered under Structured Classifiers in sub clause 11.4.4.
+
+13.2.5 Examples
+
+None.
+
+\clearpage
+
+13.3 Events
+
+13.3.1 Summary
+
+An Event is a something that may occur at a specific instant in time. 
+One Event may have many occurrences, which may happen at different times. 
+In this sense, an Event can be considered a classification of its occurrences, though Events are not actually Classifiers in UML.
+
+イベントは、特定の瞬間に発生する可能性があるものです。
+1つのイベントには、さまざまなタイミングで発生する可能性のある多くの発生があります。
+この意味では、イベントは実際にはUMLの分類子ではありませんが、発生の分類と見なすことができます。
+
+Of particular importance are Events that trigger a response within a Behavior. 
+Such Events that may be explicitly modeled within UML include TimeEvents that occur at a specified time or after a duration, ChangeEvents that occur
+when a specified Boolean value becomes true and MessageEvents that occur on the receipt of a message, which is a communication from one Behavior to another requesting an Operation call or Signal reception.
+
+特に重要なのは、動作内で応答をトリガーするイベントです。
+UML内で明示的にモデル化できるそのようなイベントには、指定された時間または期間後に発生するTimeEvents、発生するChangeEventsが含まれます
+指定されたブール値がtrueになり、メッセージの受信時に発生するMessageEvents。ある動作から別の動作への通信であり、操作呼び出しまたはシグナル受信を要求します。
+
+13.3.2 Abstract Syntax
+
+13.3.3 Semantics
+
+13.3.3.1 Event Dispatching
+
+An Event is the specification of some occurrence that may potentially trigger behavioral effects. 
+A Trigger specifies a specific point in the definition of a Behavior at which an Event occurrence may have such an effect. 
+Event is a PackageableElement, allowing Events to be modeled independently of their use. ]
+A Trigger, however, always appears as a part of some larger behavioral specification (e.g., on a StateMachine Transition or in an AcceptEventAction). 
+A single Event may be used in several different Triggers.
+
+イベントは、行動上の影響を引き起こす可能性のある発生の仕様です。
+トリガーは、イベント発生がそのような影響を与える可能性がある動作の定義の特定のポイントを指定します。
+EventはPackageableElementであり、使用とは関係なくイベントをモデル化できます。 ]
+ただし、トリガーは常に、より大きな動作仕様の一部として表示されます（たとえば、StateMachine TransitionまたはAcceptEventAction内）。
+1つのイベントを複数の異なるトリガーで使用できます。
+
+As discussed in sub clause 13.2.3, a Behavior execution always has an associated context object (which may be the execution itself). 
+A context object mediates the handling of Event occurrences for all of its associated Behavior executions. 
+When an Event occurrence is recognized by a context object, it may have an immediate effect or it may be saved for later triggered effect. 
+An immediate effect is manifested by direct invocation of a Behavior as determined by the Event, such as the invocation of the method of a BehavioralFeature (see sub clause 13.2.3). 
+A triggered effect is manifested by the storage of the occurrence in the event pool of the object and the later consumption of the occurrence by an ongoing Behavior execution that reaches a Trigger that matches the Event corresponding to the occurrence in the pool.
+
+13.2.3項で説明したように、動作の実行には常に関連するコンテキストオブジェクト（実行自体の場合もあります）があります。
+コンテキストオブジェクトは、関連するすべてのBehavior実行のイベント発生の処理を仲介します。
+イベントの発生がコンテキストオブジェクトによって認識されると、すぐに影響する場合と、後でトリガーされるために保存される場合があります。
+BehavioralFeatureのメソッドの呼び出し（13.2.3節を参照）など、イベントによって決定されたBehaviorの直接呼び出しによって、即時の効果が現れます。
+トリガーされた効果は、オブジェクトのイベントプール内のオカレンスの格納と、プール内のオカレンスに対応するイベントに一致するトリガーに到達する進行中の動作実行によるオカレンスの後での消費によって明らかになります。
+
+In general, when a Behavior execution comes to a wait point where it needs a Trigger to continue, the event pool of its context object is examined for an event that satisfies the outstanding Trigger (or Triggers). 
+If the pool contains an event occurrence that satisfies one of the Triggers, the occurrence is removed from the pool and dispatched to the Behavior, which continues its execution as specified. 
+Any data associated with the Event occurrence are made available to the triggered Behavior during its further execution.
+NOTE. All Behaviors with the same context object share the event pool of that object, but any Event occurrence in the pool can be consumed by only one Behavior.
+There is no requirement for a specific order in which Event occurrences in an event pool are examined or dispatched. 
+If an event pool contains an occurrence that satisfies no Triggers at a wait point, then the general semantics of BehavioredClassifiers do not specify what happens to it. 
+(However, see the specific semantics for the dispatching and deferring of event occurrences for StateMachines in sub clause 14.2.)
+
+一般に、Behaviorの実行が続行するためにトリガーを必要とする待機ポイントに到達すると、そのコンテキストオブジェクトのイベントプールは、未解決のトリガー（1つまたは複数）を満たすイベントがないか調べられます。
+トリガーの1つを満たすイベントオカレンスがプールに含まれている場合、そのオカレンスはプールから削除され、指定されたとおりに実行を継続するBehaviorにディスパッチされます。
+イベントの発生に関連付けられたすべてのデータは、その後の実行中にトリガーされた動作で使用できるようになります。
+注意。同じコンテキストオブジェクトを持つすべての動作は、そのオブジェクトのイベントプールを共有しますが、プール内のイベントの発生は、1つの動作のみが使用できます。
+イベントプール内のイベントの発生が検査またはディスパッチされる特定の順序に関する要件はありません。
+イベントプールに待機ポイントでトリガーを満たさないオカレンスが含まれている場合、BehavioredClassifierの一般的なセマンティクスでは、何が発生するかを指定しません。
+（ただし、14.2節のStateMachinesのイベント発生のディスパッチおよび延期の具体的なセマンティクスを参照してください。）
+
+
+13.3.3.2 Message Events
+
+
+A message is a communication in which a sender makes a request for either an Operation call or Signal reception by a receiver. 
+This communication involves two events: the event of sending the message and the event of receiving the message. 
+Sending events, however, are not modeled as explicit model elements in UML, though they are implicit in the execution of InvocationActions (see sub clause 16.3) and occurrences of such events can be modeled in Interactions (see sub clause 17.5). 
+A MessageEvent, on the other hand, is an explicit model of the receipt of a message, in order to be able to specify a Trigger that responds to occurrences of that event.
+
+メッセージは、送信者がオペレーション呼び出しまたは受信者によるシグナル受信のいずれかを要求する通信です。
+この通信には、メッセージを送信するイベントとメッセージを受信するイベントの2つのイベントが含まれます。
+ただし、イベントの送信は、UMLの明示的なモデル要素としてモデル化されていませんが、InvocationActions（16.3節を参照）の実行では暗黙的であり、そのようなイベントの発生は、相互作用（17.5節を参照）でモデル化できます。
+一方、MessageEventは、イベントの発生に応答するトリガーを指定できるようにするための、メッセージ受信の明示的なモデルです。
+
+
+A message contains:
+ Data associated with the request being made (arguments for Operation parameters or values for Signal attributes).
+ Information about the nature of the request (i.e., the BehavioralFeature invoked).
+ For a synchronous invocation, sufficient information to enable the return of a reply from the invoked Behavior.
+
+メッセージに含まれるもの：
+行われる要求に関連付けられたデータ（操作パラメーターの引数または信号属性の値）。
+リクエストの性質に関する情報（つまり、呼び出されたBehavioralFeature）。
+同期呼び出しの場合、呼び出された動作から応答を返すための十分な情報。
+
+While each message is targeted at exactly one receiver object and caused by exactly one sending object, an occurrence of a sending event may result in a number of messages being generated (as in SignalBroadcastAction, see sub clause 16.3). 
+The receiver of a message may be the same as the sender, it may be local (i.e., an object held in a slot of the currently executing Behavior or its context object) or it may be remote. 
+The manner of transmitting the message, the amount of time required to transmit it, the order in which the transmissions reach their receiver object and the path for reaching the receiver object are undefined.
+
+各メッセージのターゲットは1つだけであり、1つの送信オブジェクトが原因ですが、送信イベントが発生すると、多数のメッセージが生成される場合があります（SignalBroadcastActionのように、16.3節を参照）。
+メッセージの受信者は送信者と同じでも、ローカル（つまり、現在実行中の動作またはそのコンテキストオブジェクトのスロットに保持されているオブジェクト）でも、リモートでもかまいません。
+メッセージの送信方法、送信に必要な時間、送信が受信オブジェクトに到達する順序、および受信オブジェクトに到達するためのパスは定義されていません。
+
+The receipt of a message is manifested as a MessageEvent occurrence. 
+A CallEvent is a MessageEvent for messages requesting that a specific Operation be called. 
+A SignalEvent is a MessageEvent for messages requesting the reception of an instance of a specific Signal. 
+An AnyReceiveEvent is a MessageEvent for any message that is not explicitly handled by any other related Trigger.
+
+メッセージの受信は、MessageEventオカレンスとして明示されます。
+CallEventは、特定のオペレーションの呼び出しを要求するメッセージのMessageEventです。
+SignalEventは、特定のシグナルのインスタンスの受信を要求するメッセージのMessageEventです。
+AnyReceiveEventは、他の関連するトリガーによって明示的に処理されないメッセージのMessageEventです。
+
+In the case of a CallEvent for an Operation or a SignalEvent for a Signal that matches a Reception on the receiver, if the Operation or Reception has one or more methods, then the method resolution process described for Behavioral Features and Methods in sub clause 13.2.3 shall be carried out to determine a method to be used to handle a MessageEvent occurrence. 
+If a method is so identified, it is invoked to respond to the message request. 
+Otherwise, the MessageEvent occurrence is saved in the event pool of the receiving object. 
+When a MessageEvent occurrence is dispatched from the event pool and matches a Trigger defined in the Behavior specification for the receiver, it causes the execution of a response within the Behavior.
+
+オペレーションのCallEventまたはシグナルのSignalEventがレシーバーの受信と一致する場合、オペレーションまたは受信に1つ以上のメソッドがある場合、サブセクション13.2の「動作の機能とメソッド」で説明されているメソッド解決プロセス。 3は、MessageEventの発生を処理するために使用されるメソッドを決定するために実行されます。
+メソッドがそのように識別された場合、メッセージ要求に応答するために呼び出されます。
+それ以外の場合、MessageEventオカレンスは、受信オブジェクトのイベントプールに保存されます。
+MessageEventオカレンスがイベントプールからディスパッチされ、レシーバーのBehavior仕様で定義されたトリガーと一致すると、Behavior内で応答が実行されます。
+
+A Trigger for an AnyReceiveEvent may be triggered by the receipt of any message (Signal send or Operation call).
+However, if there is a relevant SignalEvent or CallEvent Trigger that specifically matches the message, then the AnyReceiveEvent Trigger is not triggered by the message. 
+Which other Triggers are related to an AnyReceiveEvent Trigger depends on the context of the Trigger (in particular, see sub clause 14.2 on Transitions and sub clause 16.10 on AcceptEventActions). 
+An AnyReceiveEvent may also be triggered by the receipt of a message containing an object other than a SignalInstance, as may be sent by a SendObjectAction (see sub clause 16.3.3).
+
+AnyReceiveEventのトリガーは、メッセージの受信（シグナル送信またはオペレーション呼び出し）によってトリガーされます。
+ただし、メッセージに特に一致する関連するSignalEventまたはCallEventトリガーがある場合、AnyReceiveEventトリガーはメッセージによってトリガーされません。
+AnyReceiveEventトリガーに関連する他のトリガーは、トリガーのコンテキストによって異なります（特に、遷移に関するサブセクション14.2およびAcceptEventActionsに関するサブセクション16.10を参照してください）。
+AnyReceiveEventは、SendObjectActionによって送信される場合と同様に、SignalInstance以外のオブジェクトを含むメッセージの受信によってもトリガーされます（サブセクション16.3.3を参照）。
+
+A Trigger may also specify one or more ports, in which case the event of the Trigger shall be a MessageEvent. 
+In this case the Trigger only matches event occurrences for messages received through one of the specified Ports (see also sub clause 11.3 on EncapsulatedClassifiers and Ports).
+
+トリガーは1つ以上のポートを指定することもできます。その場合、トリガーのイベントはMessageEventになります。
+この場合、トリガーは、指定されたポートのいずれかを介して受信されたメッセージのイベント発生にのみ一致します（EncapsulatedClassifiersおよびポートの11.3項も参照）。
+
+
+13.3.3.3 Change Events
+
+
+A ChangeEvent occurs when a Boolean changeExpression becomes true. 
+For example, this could be as a result of a change in the value of some Attribute or a change in the value referenced by a link corresponding to an Association. 
+A ChangeEvent occurs implicitly and is not the result of any explicit action.
+
+ブールのchangeExpressionがtrueになると、ChangeEventが発生します。
+たとえば、これは、ある属性の値の変更、または関連付けに対応するリンクによって参照される値の変更の結果である可能性があります。
+ChangeEventは暗黙的に発生し、明示的なアクションの結果ではありません。
+
+An occurrence is considered to be generated any time the value of the changeExpression changes from false to true.
+However, it is not defined specifically when a changeExpression is evaluated or whether a ChangeEvent occurrence remains available for detection even if the associated changeExpression value changes back to false before the occurrence is consumed.
+
+changeExpressionの値がfalseからtrueに変化するたびに、オカレンスが生成されたと見なされます。
+ただし、changeExpressionが評価されるとき、または関連付けられたchangeExpression値がfalseに戻ってオカレンスが消費される前にChangeEventオカレンスが検出可能なままであるかどうかは、特に定義されていません。
+
+
+13.3.3.4 Time Events
+
+A TimeEvent specifies an instant in time at which it occurs. 
+The instant is specified using a TimeExpression (see sub clause 8.4). 
+If the TimeEvent is absolute, then the time resulting from the evaluation of the TimeExpression is the absolute time at which the TimeEvent occurs. 
+If the TimeEvent is relative, then the TimeEvent shall be used in the context of a Trigger, and the time of occurrence is relative to a starting time determined for the Trigger.
+As discussed above under “Event Dispatching”, a Behavior may come to a wait point at which it has one or more Triggers available to which event occurrences may be dispatched. 
+If such an outstanding Trigger has a relative TimeEvent, then the starting time for that TimeEvent is the time at which the Behavior came to the wait point.
+
+TimeEventは、それが発生する瞬間を指定します。
+インスタントはTimeExpressionを使用して指定されます（8.4節を参照）。
+TimeEventが絶対である場合、TimeExpressionの評価から生じる時間は、TimeEventが発生する絶対時間です。
+TimeEventが相対的である場合、TimeEventはトリガーのコンテキストで使用され、発生時間はトリガーに対して決定された開始時間に相対的です。
+上記の「イベントのディスパッチ」で説明したように、ビヘイビアーは、イベントの発生をディスパッチできる1つ以上のトリガーが利用可能な待機ポイントに到達する場合があります。
+そのような未解決のトリガーに相対的なTimeEventがある場合、そのTimeEventの開始時間は、動作が待機ポイントに到達した時間です。
+
+13.3.4 Notation
+
+There is no notation for Events outside of the context of their use in Triggers. 
+A Trigger is denoted textually based on the kind of Event it is for:
+
+トリガーでの使用のコンテキスト外のイベントの表記はありません。
+トリガーは、イベントの種類に基づいてテキストで示されます。
+
+<trigger> ::= <call-event> | <signal-event> | <any-receive-event> | <time-event> | <change-event>
+where:
+
+ A CallEvent is denoted by the name of the triggering Operation, optionally followed by an assignment
+
+CallEventは、トリガーとなるオペレーションの名前で示され、オプションで割り当てが続きます。
+
+specification:
+<call-event> ::= <name> [‘(‘ [<assignment-specification>] ‘)’]
+<assignment-specification> ::= <assigned-name> [‘,’ <assigned-name>]*
+where:
+
+<assigned-name> is an implicit assignment of the argument value for the corresponding Parameter of the Operation to a Property or Variable of the context object for the triggered Behavior.
+
+<assigned-name>は、トリガーされた動作のコンテキストオブジェクトのプロパティまたは変数への、操作の対応するパラメーターの引数値の暗黙的な割り当てです。
+
+<assignment-specification> is optional and may be omitted even if the Operation has Parameters. 
+No standard mapping is defined from an assignment specification to the UML abstract syntax. 
+A conforming tool is not required to support this notation. 
+If it does, it may provide a mapping to standard UML abstract syntax, e.g., by implicitly inserting Actions to carry out the behavior implied by the notation.
+
+<assignment-specification>はオプションであり、オペレーションにパラメーターがある場合でも省略できます。
+割り当て仕様からUML抽象構文への標準マッピングは定義されていません。
+この表記をサポートするために適合ツールは必要ありません。
+含まれている場合、たとえば、表記法に含まれる動作を実行するアクションを暗黙的に挿入することにより、標準のUML抽象構文へのマッピングを提供できます。
+
+ A SignalEvent is denoted by name of the triggering Signal, optionally followed by an assignment specification:
+
+SignalEventは、トリガーするシグナルの名前で示され、オプションで割り当ての指定が続きます。
+
+<signal-event> ::= <name> [‘(‘ [<assignment-specification>] ‘)’]
+<assignment-specification> ::= <attr-name> [‘,’<attr-name>]*
+
+where <assignment-specification> is defined as for CallEvent above.
+
+<assignment-specification>は、上記のCallEventの場合と同様に定義されています。
+
+ Any AnyReceiveEvent is denoted by “all”:
+
+AnyReceiveEventは「すべて」で示されます。
+<any-receive-event> ::= ‘all’
+
+ A ChangeEvent is denoted by “when” followed by a Boolean ValueSpecification:
+
+ChangeEventは、ブール値の仕様が後に続く「いつ」で示されます。
+<change-event> ::= ‘when’ <value-specification>
+
+See Clause 8 for the notation for various kinds of ValueSpecifications.
+
+さまざまな種類のValueSpecificationsの表記については、条項8を参照してください。
+
+ A relative TimeEvent is denoted with “after” followed by a TimeExpression, such as “after 5 seconds.” 
+An absolute TimeEvent is specified with “at” followed by a TimeExpression, such as “at Jan. 1, 2000, Noon”.
+
+相対TimeEventは、「後」の後に「5秒後」などのTimeExpressionが続くことで示されます。
+絶対TimeEventは、「2000年1月1日正午」のように、「at」の後にTimeExpressionを続けて指定します。
+
+<time-event> ::= <relative-time-event> | <absolute-time-event>
+<relative-time-event> ::= ‘after’ <time-expression>
+<absolute-time-event> ::= ‘at’ <time-expression>
+
+See also sub clause 8.4.4 on the notation for TimeExpressions.
+
+TimeExpressionsの表記に関する8.4.4も参照してください。
+
+
+13.3.5 Examples
+None.
+
+
+\end{document}
